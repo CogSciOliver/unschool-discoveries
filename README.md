@@ -4,6 +4,7 @@
 
 - Building a Simple. Durable. Crawlable. Non-Obvescated Site to build brand awarness. 
 
+```
 /index.html
 /blog/
     what-is-unschooling.html
@@ -13,3 +14,4 @@
 /images/
 /sitemap.xml
 /robots.txt
+```
