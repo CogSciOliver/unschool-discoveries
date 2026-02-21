@@ -1,3 +1,8 @@
+---
+title: Unschooling Lab Notes
+tags: lab
+description: Take a deep breath and you and your kids are now in control.
+---
 # Unschooling Lab Notes
 
 First and foremost, **unschooling is NOT listening to other people telling you how to unschool your kids.**  

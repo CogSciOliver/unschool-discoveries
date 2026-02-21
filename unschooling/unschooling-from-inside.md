@@ -1,4 +1,12 @@
-# What Is Unschooling? (From the Inside)
+---
+layout: layout.html
+title: Unschooling From the Inside
+tags: posts
+description: Unschooling Manifesto
+---
+<hr>
+
+# Unschooling From the Inside
 
 ## A Day Without a Bell
 
@@ -134,8 +142,8 @@ It is not the absence of learning.
 
 It is the absence of coercion.
 
-Structure still exists.  
 Boundaries still exist.  
+Structure still exists.  
 Money still exists.  
 Laundry still exists.  
 Shirts are still not napkins.
@@ -146,15 +154,17 @@ But participation in life is not postponed until adulthood.
 
 ## A Different Narrative
 
-Most books and shows move through four speeds:
+Most books and shows move through six or speeds:
 
 Kindergarten.  
 Elementary.  
 High school.  
 College.
-
 Then marriage.  
-Then rinse and repeat.
+Then Kids.  
+Nowadays: The 3rd Act Years (very new to the American entertainment platform outside of Golden Girls)
+
+Then rinse it's and repeat.
 
 Unschooling expands the storyline.
 
@@ -163,9 +173,9 @@ They live now.
 
 There are more than four speeds.
 
-There are a thousand.
+There are a thousand plus one born each day we live to have another experience.
 
-This site is a record of those thousand slices of life.
+Unschool Discoveries is a record of those 1,001 slices of life.
 
 ---
 
@@ -173,14 +183,20 @@ This site is a record of those thousand slices of life.
 
 What is your one cent?  
 What is your child’s one cent?  
-What is the other parent or guardian’s one cent?
+What is your child’s other parent or guardian’s one cent?
 
-That conversation — inside your own home — is the only narrative that defines what unschooling looks like for you.
+That conversation —inside your own home— is the only narrative that defines what unschooling looks like for you.
 
 There is no single template.
 
 There is lived reality.
 
-If you are living it, considering it, or reclaiming your own curiosity alongside your children —
+If you are living it, considering it, or reclaiming your own curiosity alongside your children, welcome.
 
-welcome.
+Ready to explore more? Check out theses topics &rarr;
+## Topics
+
+{% for post in collections.topic %}
+
+- [{{ post.data.title }}]({{ post.url}})
+  {% endfor %}

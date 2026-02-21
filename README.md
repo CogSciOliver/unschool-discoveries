@@ -1,5 +1,30 @@
 # unschool-discoveries
 
+## file structure in progress 
+unschool-discoveries
+/css
+/holder (crawl disallowed for dev only)
+/images
+/unschooling
+   /_includes
+        layout.html 
+    /_site
+        @11ty/eleventy --serve (( auto generated created ))
+    /assets
+        style.css
+    /lab
+        lab.json
+        *.md
+    /topics
+        topic.json
+        *.md
+    /index.md
+    *.md (landing pages for blog sections)
+    
+*.html temp landing pages (currently 20) 
+sitemap.xml
+robot.txt
+
 ## Software engineering goals
 - Build and extend neo web language libarary and code samples with completes works for clients and ventures
 - Hugo for marketing and landing site 

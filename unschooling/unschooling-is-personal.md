@@ -1,4 +1,5 @@
 ---
+layout: layout.html
 title: Unschooling Is Personal
 description: Above all unschooling is not listening to other people telling you how to unschool your kids. Come for community & sharing not to find an authority figure. 
 ---
