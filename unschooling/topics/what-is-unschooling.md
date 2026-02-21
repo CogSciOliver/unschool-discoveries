@@ -3,12 +3,14 @@ layout: layout.html
 title: What is Unschooling
 tags: posts
 description: Topic 1 SubTitle
-image: https://cdn.gamma.app/gdwwhyewwldwc8z/26d2b179a0d64403af29a866684dc29f/original/1.jpg
+image: /unschooling/_site/assets/imgs/unschooling.png/
 ---
 
 
 *What Unschooling Feels Like From the Inside...*
-{{ image }}
+
+
+![Unschoolers Playing Phagwa]( {{ image }} )
 
 ## A Day Without a Bell
 There is no rush in our mornings.
