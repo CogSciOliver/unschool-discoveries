@@ -3,16 +3,23 @@
 ========================= */
 
 :root {
-	--bg: #f5f7fb;
+	--bg: #e2e8f8;
 	--surface: #ffffff;
 	--text: #1f2937;
 	--muted: #6b7280;
-	--border: #e5e7eb;
+	--border: #e2e8f8;
 
 	--primary: #1240f8;
 	--primary-soft: #dbe4ff;
+	--fading: #b1c0fc;
+	--dim: #6b7280;
 
-	--radius: 16px;
+	/*for gradients*/
+	--start: rgba(228, 191, 255, 0.4);
+	--mid: rgba(196, 254, 255, 0.4);
+	--end: rgba(255, 237, 209, 0.4);
+
+	--radius: 50px;
 	--max-width: 72ch;
 }
 
@@ -21,11 +28,18 @@
 	:root {
 		--bg: #0b0e1d;
 		--surface: #111827;
-		--text: #e5e7eb;
+		--text: #e2e8f8;
 		--muted: #9ca3af;
 		--border: #1f2937;
 		--primary: #2f6df6;
 		--primary-soft: #182044;
+		--fading: #1240f8;
+		--dim: #1f2937;
+
+		/*for gradients*/
+		--start: rgba(16, 3, 23, 1);
+		--mid: rgba(2, 7, 26, 1);
+		--end: rgba(3, 42, 43, 1);
 	}
 }
 
@@ -33,21 +47,35 @@
 [data-theme="dark"] {
 	--bg: #0b0e1d;
 	--surface: #111827;
-	--text: #e5e7eb;
+	--text: #e2e8f8;
 	--muted: #9ca3af;
 	--border: #1f2937;
 	--primary: #2f6df6;
 	--primary-soft: #182044;
+	--fading: #1240f8;
+	--dim: #1f2937;
+
+	/*for gradients*/
+	--start: rgba(16, 3, 23, 1);
+	--mid: rgba(3, 12, 46, 1);
+	--end: rgba(3, 42, 43, 1);
 }
 
 [data-theme="light"] {
-	--bg: #f5f7fb;
+	--bg: #e2e8f8;
 	--surface: #ffffff;
 	--text: #1f2937;
 	--muted: #6b7280;
 	--border: #e5e7eb;
 	--primary: #1240f8;
 	--primary-soft: #dbe4ff;
+	--fading: #b1c0fc;
+	--dim: var(--bg);
+
+	/*for gradients*/
+	--start: rgba(228, 191, 255, 0.4);
+	--mid: rgba(196, 254, 255, 0.4);
+	--end: rgba(255, 237, 209, 0.4);
 }
 
 /* =========================
@@ -62,6 +90,7 @@
 
 html {
 	font-size: 18px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -72,6 +101,12 @@ body {
 	line-height: 1.8;
 	-webkit-font-smoothing: antialiased;
 	font-size: clamp(1rem, 1.05vw + 1rem, 1.125rem);
+	background: linear-gradient(
+		94deg,
+		var(--start) 0%,
+		var(--mid) 30%,
+		var(--end) 90%
+	);
 }
 
 /* =========================
@@ -82,19 +117,22 @@ h1,
 h2,
 h3 {
 	font-family: "Poppins", sans-serif;
-	font-weight: 700;
 	line-height: 1.15;
 	margin: 3rem 0 1.25rem;
 }
 
 h1 {
-	font-size: clamp(2.2rem, 4vw, 3rem);
+	font-size: clamp(2rem, 3vw, 2.5rem);
+	font-weight: 700;
 }
 h2 {
-	font-size: clamp(1.6rem, 3vw, 2.2rem);
+	font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+	font-weight: 600;
 }
 h3 {
 	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--primary);
 }
 
 p {
@@ -122,6 +160,7 @@ a:hover {
 	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: 4rem 2rem;
+    border-left: 1px solid var(--primary-soft); /* vertical line on left */
 }
 
 .article p {
@@ -129,7 +168,7 @@ a:hover {
 }
 
 .article h2 {
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
 .article blockquote {
@@ -155,9 +194,47 @@ a:hover {
 	margin: 2rem 0;
 	font-weight: 500;
 	font-size: clamp(12px, 1rem + 0.5vw, 16px);
-    color: var(--muted);
+	color: var(--muted);
 }
 
+.article h1 {
+	background: linear-gradient(90deg, var(--fading), transparent 70%);
+	border-radius: var(--radius);
+	display: inline-block;
+	padding: 1rem;
+	padding-left: 3rem;
+	text-align: center;
+	display: block;
+}
+.article h2 {
+	background: linear-gradient(90deg, var(--fading), transparent 70%);
+	border-radius: var(--radius);
+	display: inline-block;
+	padding: 1rem;
+	padding-left: 2rem;
+}
+
+/* =========================
+   SUBTLE NOTEBOOK BACKGROUND
+========================= */
+main {
+	position: relative;
+	/* must be very faded if background-color: var(--bg) ;*/
+
+	/* Layer 1: soft wavy gradient */
+	background-image: 
+  
+    /* Layer 2: repeating notebook lines */ repeating-linear-gradient(
+		to bottom,
+		var(--primary-soft) 0px,
+		var(--dim) 1px,
+		transparent 1px,
+		transparent 1rem
+	);
+
+	background-repeat: repeat;
+	background-size: auto;
+}
 /* =========================
    SECTIONS
 ========================= */
@@ -206,11 +283,18 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem;
+	background: var(--surface);
+	box-shadow: 0 10px 10px var(--primary-soft);
 }
 
 nav a {
 	margin-left: 1.5rem;
 	font-weight: 500;
+}
+
+nav a:hover {
+	color: var(--primary);
+	text-decoration: underline;
 }
 
 /* =========================
