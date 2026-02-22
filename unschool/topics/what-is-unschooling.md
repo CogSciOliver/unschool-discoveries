@@ -3,7 +3,7 @@ layout: layout.html
 title: What is Unschooling
 tags: posts
 description: Topic 1 SubTitle
-image: assets/imgs/unschooling.png/
+image: https://unschooldiscoveries.com/images/unschooling.png
 ---
 
 
