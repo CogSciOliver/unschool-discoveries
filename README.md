@@ -26,10 +26,10 @@ sitemap.xml
 robot.txt
 
 ## Software engineering goals
-- Build and extend neo web language libarary and code samples with completes works for clients and ventures
+- Build and extend neo web language library and code samples with completes works for clients and ventures
 - Hugo for marketing and landing site 
 - 11thy for bonus content creation
-- Build a modern portfolio with XSLT & GO and back to basics libraries that reduce the load, time, cost and maintence of sites and software that don't require dyanmical systems like react to function for the basic needs of fast, reliable and editable without breaking versions and lost devtime. 
+- Build a modern portfolio with XSLT & GO and back to basics libraries that reduce the load, time, cost and maintenance of sites and software that don't require dynamical systems like react to function for the basic needs of fast, reliable and editable without breaking versions and lost dev time. 
 
 # Case Study 
 ## Client Venture 
@@ -42,17 +42,17 @@ robot.txt
 ## Challenge 
 - Speed
 - Monetize platform culture that takes away brand ownership and paywalls audience without creator compensation 
-- bloating software engineering proactices 
+- bloating software engineering practices 
 
 ## Solution
 - HTML basics
-- MD and MDX simplicisty 
+- MD and MDX simplicity 
 - Full ownership of content
 - Full copyright and publish rights
-- Ablitiy to directly monetize client venture
+- Ability to directly monetize client venture
 
 ## Approach 
-- Experimentations 
+- Experimentation 
 - Hugo for marketing and landing site 
 - 11thy for bonus content creation
 - Self hosted podcast 
@@ -62,7 +62,7 @@ robot.txt
 
 # Strategy Setting: Getting Back to Basics
 
-- Building a Simple. Durable. Crawlable. Non-Obvescated Site to build brand awarness. 
+- Building a Simple. Durable. Search SEO Indexed. Non-Obfuscated Site to build brand awareness. 
 
 ```
 /index.html
