@@ -1,15 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://unschooldiscoveries.com/</loc>
-  </url>
-  <url>
-    <loc>https://unschooldiscoveries.com/unschooling/what-is-unschooling.html</loc>
-  </url>
-  <url>
-    <loc>https://unschooldiscoveries.com/unschooling/unschooling-vs-homeschooling.html</loc>
-  </url>
-  <url>
-    <loc>https://unschooldiscoveries.com/unschooling/unschooling-laws-by-state.html</loc>
-  </url>
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://unschooldiscoveries.com/</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/author-bio</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/shop</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/unschool-pages-hub</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/about</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/home</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/explore-the-series</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/sneak-peeks</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/podcast</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/reviews</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/privacy-policy</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschooldiscoveries.com/terms-of-use</loc>
+<lastmod>2026-02-27T17:53:49+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/</loc>
+<lastmod>2026-02-28T00:28:20+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/unschooling/</loc>
+<lastmod>2026-02-28T00:28:20+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/lab/</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/unschooling/unschooling-from-inside/</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/unschooling/unschooling-is-personal/</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/unschooling/what-is-unschooling/</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/lab/unschooling-lab-notes/</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://unschoolpages.unschooldiscoveries.com/unschooling/what-is-unschooling</loc>
+<lastmod>2026-02-28T00:28:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
