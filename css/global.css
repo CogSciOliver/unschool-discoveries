@@ -1,0 +1,1328 @@
+<style id="global-styles">
+					:root {
+						--\31 00vh: 100%;
+					}
+					html {
+						min-height: var(--\31 00vh);
+						min-height: -webkit-fill-available;
+						height: var(--\31 00vh);
+						height: -webkit-fill-available;
+					}
+					body {
+						position: relative;
+						--\31 00vh: 100vh;
+						--editor-width: 100vw;
+					}
+					[data-node-view-content-inner="paragraph"]:empty::after {
+						content: " ";
+					}</style
+				><style data-emotion="css-global ggxrj">
+					html {
+						overflow-x: hidden;
+					}
+					body {
+						overflow: hidden;
+						-webkit-overflow-scrolling: touch;
+						--doc-padding-top: 75px;
+					}</style
+				><style data-emotion="css 6uzl6m">
+					.css-6uzl6m {
+						display: -webkit-box;
+						display: -webkit-flex;
+						display: -ms-flexbox;
+						display: flex;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						width: 100%;
+						z-index: 10;
+					}
+				</style>
+				<div class="css-6uzl6m">
+					<style data-emotion="css lp7pnk">
+						.css-lp7pnk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;--card-background-color:#ffffffbf;--card-background-image:none;--card-border-color:#FFFFFF;--card-backdrop-filter:blur(20px) saturate(170%);--card-border:var(--card-border-width) solid var(--card-border-color);--card-border-width:0.0625em;--card-border-radius:1.2em;--card-shadow-distance:0.4em;--card-border-shadow:0 0 0 0.0625em #FFFFFF;--card-box-shadow:var(--card-shadow-distance) var(--card-shadow-distance) 0 0 var(--card-border-color);--card-shadow:var(--card-shadow-distance) var(--card-shadow-distance) 0 0 var(--card-border-color);--clickable-background-color:#f2f2f299;--box-border-radius:0.75em;--shape-border-width:0.0625em;--line-thickness:1px);--button-border-radius:0.75em;--shape-bg-image:var(--accent-gradient-background);--shape-bg-color-alpha:#cfdbfcff;--shape-bg-color-alpha-dim:#c1d0fbff;--shape-bg-color-alpha-light:#dde6fdff;--shape-bg-color:#cfdbfcff;--shape-border-color:#b5c1e2ff;--shape-text-color:#000;--line-color:#b5c1e2ff;--shape-bg-image-svg:url(#theme-accent-background-gradient-linear);--shape-bg-image-svg-rtl:url(#theme-accent-background-gradient-linear-rtl);--shape-fill:var(--accent-gradient-fill, var(--accent-color));--shape-fill-opacity:1;--shape-fill-svg:url(#theme-accent-gradient-linear) var(--accent-color);--shape-fill-svg-rtl:url(#theme-accent-gradient-linear-rtl) var(--accent-color);--shape-fill-svg-dim:var(--accent-color-dim);--shape-fill-svg-light:var(--accent-color-light);--shape-fill-text-color:#fff;--accent-color-dim:#0033d6ff;--accent-color-light:#2b66ffff;--shape-shadow-size:0.09375em;--shape-shadow-blur:0;--clickable-shadow:0 0.125em 0.25em -0.0625em rgba(0, 0, 0, 0.06);--body-font:"IBM Plex Sans";--heading-font:"Outfit";--heading-font-weight:500;--body-font-weight:400;--line-height-body:1.6;--line-height-heading:1.25;--accent-color:#124df0;--accent-color-readable:#124df0;--accent-color-background-muted:#cfdbfcff;--expandable-hover-background:#7b6bfa1a;--neutral-border-color:var(--chakra-colors-blackAlpha-200);--neutral-background-color:#f2f2f2ff;--button-color:#3f6ff3ff;--button-color-inverted:#fff;--link-color:#7b6bfaff;--link-color-hover:#4f3af8ff;--link-box-shadow:0 0 0px 3px #7b6bfaff;--body-color:#666666ff;--body-color-muted:#66666680;--body-color-inverted:#fff;--link-color-inverted:#000;--highlight-color-dark:var(--body-color-inverted);--highlight-color-light:var(--body-color);--highlight-link-color-hover-dark:#e6e6e6ff;--highlight-link-color-hover-light:#808080ff;--heading-color:#3f6ff3ff;--card-color:#FFFFFF;--card-color-mask:#ffffffd9;--placeholder-button-bg-color:var(--chakra-colors-gray-200);--placeholder-button-bg-hover-color:var(--chakra-colors-gray-300);--placeholder-button-text-color:var(--chakra-colors-gray-400);--placeholder-button-text-hover-color:var(--chakra-colors-gray-700);}.css-lp7pnk .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-clickable-box{transition-property:transform;transition-duration:var(--chakra-transition-duration-normal);border:var(--shape-border-width) solid var(--neutral-border-color);border-radius:var(--box-border-radius);background-color:var(--clickable-background-color);box-shadow:var(--clickable-shadow);-webkit-backdrop-filter:var(--card-backdrop-filter);backdrop-filter:var(--card-backdrop-filter);}@media print{.css-lp7pnk .themed-clickable-box{box-shadow:var(--chakra-shadows-none);}}.css-lp7pnk .block-paragraph{font-size:1em;line-height:calc(var(--line-height-body) * (var(--card-font-scale, 1) * var(--zoom-level, 1) + 1) / 2);}@media print{.css-lp7pnk .block-paragraph{font-size:1em;}}.css-lp7pnk .block-heading .heading[level="1"]{font-size:2em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-heading .heading[level="1"]{font-size:2.5em;}}@media print{.css-lp7pnk .block-heading .heading[level="1"]{font-size:2.5em;}}.css-lp7pnk .block-heading .heading[level="2"]{font-size:1.5em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-heading .heading[level="2"]{font-size:2em;}}@media print{.css-lp7pnk .block-heading .heading[level="2"]{font-size:2em;}}.css-lp7pnk .block-heading .heading[level="3"]{font-size:1.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-heading .heading[level="3"]{font-size:1.5em;}}@media print{.css-lp7pnk .block-heading .heading[level="3"]{font-size:1.5em;}}.css-lp7pnk .block-heading .heading[level="4"]{font-size:1.1em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-heading .heading[level="4"]{font-size:1.25em;}}@media print{.css-lp7pnk .block-heading .heading[level="4"]{font-size:1.25em;}}.css-lp7pnk .block-title .title{font-size:2.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-title .title{font-size:3.45em;}}@media print{.css-lp7pnk .block-title .title{font-size:3.45em;}}.css-lp7pnk .block-title .title[level="1"]{font-size:2.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-title .title[level="1"]{font-size:3.45em;}}@media print{.css-lp7pnk .block-title .title[level="1"]{font-size:3.45em;}}.css-lp7pnk .block-title .title[level="2"]{font-size:2.5em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-title .title[level="2"]{font-size:5em;}}@media print{.css-lp7pnk .block-title .title[level="2"]{font-size:5em;}}.css-lp7pnk .block-title .title[level="3"]{font-size:2.75em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .block-title .title[level="3"]{font-size:7.5em;}}@media print{.css-lp7pnk .block-title .title[level="3"]{font-size:7.5em;}}.css-lp7pnk [data-font-size="sm"]{font-size:0.8em;line-height:calc(var(--line-height-body) * (var(--card-font-scale, 1) * var(--zoom-level, 1) + 1) / 2);}@media print{.css-lp7pnk [data-font-size="sm"]{font-size:0.8em;}}.css-lp7pnk [data-font-size="default"]{font-size:1em;line-height:calc(var(--line-height-body) * (var(--card-font-scale, 1) * var(--zoom-level, 1) + 1) / 2);}@media print{.css-lp7pnk [data-font-size="default"]{font-size:1em;}}.css-lp7pnk [data-font-size="lg"]{font-size:1.25em;line-height:calc(var(--line-height-body) * (var(--card-font-scale, 1) * var(--zoom-level, 1) + 1) / 2);}@media print{.css-lp7pnk [data-font-size="lg"]{font-size:1.25em;}}.css-lp7pnk [data-font-size="h4"]{font-size:1.1em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="h4"]{font-size:1.25em;}}@media print{.css-lp7pnk [data-font-size="h4"]{font-size:1.25em;}}.css-lp7pnk [data-font-size="h3"]{font-size:1.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="h3"]{font-size:1.5em;}}@media print{.css-lp7pnk [data-font-size="h3"]{font-size:1.5em;}}.css-lp7pnk [data-font-size="h2"]{font-size:1.5em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="h2"]{font-size:2em;}}@media print{.css-lp7pnk [data-font-size="h2"]{font-size:2em;}}.css-lp7pnk [data-font-size="h1"]{font-size:2em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="h1"]{font-size:2.5em;}}@media print{.css-lp7pnk [data-font-size="h1"]{font-size:2.5em;}}.css-lp7pnk [data-font-size="title"]{font-size:2.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="title"]{font-size:3.45em;}}@media print{.css-lp7pnk [data-font-size="title"]{font-size:3.45em;}}.css-lp7pnk [data-font-size="titleLg"]{font-size:2.5em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="titleLg"]{font-size:5em;}}@media print{.css-lp7pnk [data-font-size="titleLg"]{font-size:5em;}}.css-lp7pnk [data-font-size="titleXl"]{font-size:2.75em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk [data-font-size="titleXl"]{font-size:7.5em;}}@media print{.css-lp7pnk [data-font-size="titleXl"]{font-size:7.5em;}}.css-lp7pnk video[data-layout-cut=right]{width:100%;margin-left:0px;margin-right:0px;}.css-lp7pnk .themed-html-shape-background{border-radius:var(--box-border-radius);box-shadow:var(--shape-shadow, var(--shape-shadow-size) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color))));border:var(--shape-border-width) solid var(--shape-border-color-override, var(--shape-border-color));background:var(--shape-bg-color-override, var(--shape-bg-image, var(--shape-bg-color-alpha)));background-color:var(--shape-bg-color-override, var(--shape-bg-color-alpha));--body-color:var(--shape-text-color);--heading-color:var(--shape-text-color);}.css-lp7pnk .themed-html-shape-background .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-html-shape-outline{background:var(--card-background-color);border:var(--line-thickness) solid var(--shape-border-color-override, var(--shape-border-color));border-radius:var(--box-border-radius);box-shadow:var(--shape-shadow, var(--shape-shadow-size) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color))));--heading-color:var(--body-color);}.css-lp7pnk .themed-html-shape-outline .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-svg-shape-background{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:var(--shape-bg-color-override, var(--shape-bg-image-svg) var(--shape-bg-color-alpha));-webkit-filter:var(--shape-filter, drop-shadow(var(--shape-shadow-size) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color)))));filter:var(--shape-filter, drop-shadow(var(--shape-shadow-size) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color)))));}.css-lp7pnk .themed-svg-shape-outline{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:none;}.css-lp7pnk .themed-svg-shape-background-dim{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:var(--shape-bg-color-override, var(--shape-bg-color-alpha-dim));}.css-lp7pnk .themed-svg-shape-background-light{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:var(--shape-bg-color-override, var(--shape-bg-color-alpha-light));}.css-lp7pnk .themed-svg-neutral-background{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:var(--neutral-background-color);}.css-lp7pnk .themed-line{background-color:var(--shape-border-color-override, var(--line-color));border-radius:var(--box-border-radius);}.css-lp7pnk .themed-svg-line{stroke:var(--shape-border-color-override, var(--line-color));stroke-linejoin:round;stroke-linecap:round;}.css-lp7pnk .themed-html-shape-fill{background:var(--shape-bg-color-override, var(--shape-fill));}.css-lp7pnk .themed-svg-shape-fill{fill:var(--shape-bg-color-override, var(--shape-fill-svg));}.css-lp7pnk .themed-svg-shape-fill-dim{fill:var(--shape-bg-color-override, var(--shape-fill-svg-dim));}.css-lp7pnk .themed-svg-shape-fill-light{fill:var(--shape-bg-color-override, var(--shape-fill-svg-light));}.css-lp7pnk .themed-shape-outside-text{--heading-color:var(--body-color);}.css-lp7pnk .themed-shape-outside-text .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-shape-text-over-background{--body-color:var(--shape-text-color);--heading-color:var(--shape-text-color);}.css-lp7pnk .themed-shape-text-over-background .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-shape-text-over-fill{--body-color:var(--shape-fill-text-color);--heading-color:var(--shape-fill-text-color);}.css-lp7pnk .themed-shape-text-over-fill .themed-heading{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .themed-shape-text-over-fill svg.colorable-icon path{fill:var(--shape-fill-text-color);}.css-lp7pnk .themed-shape-text-over-fill svg.colorable-icon [stroke],.css-lp7pnk .themed-shape-text-over-fill svg.colorable-icon [stroke]>*{stroke:var(--shape-fill-text-color);fill:none;}.css-lp7pnk .themed-svg-shape-background-rtl{stroke:var(--shape-border-color-override, var(--shape-border-color));stroke-width:var(--shape-border-width);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round;fill:var(--shape-bg-color-override, var(--shape-bg-image-svg-rtl, var(--shape-bg-image-svg)) var(--shape-bg-color-alpha));-webkit-filter:var(--shape-filter, drop-shadow(calc(-1 * var(--shape-shadow-size)) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color)))));filter:var(--shape-filter, drop-shadow(calc(-1 * var(--shape-shadow-size)) var(--shape-shadow-size) var(--shape-shadow-blur) var(--shape-shadow-color, var(--shape-border-color-override, var(--shape-border-color)))));}.css-lp7pnk .themed-svg-shape-fill-rtl{fill:var(--shape-bg-color-override, var(--shape-fill-svg-rtl, var(--shape-fill-svg)));}.css-lp7pnk .themed-svg-shape-fill-dim-rtl{fill:var(--shape-bg-color-override, var(--shape-fill-svg-dim));}.css-lp7pnk .themed-svg-shape-fill-light-rtl{fill:var(--shape-bg-color-override, var(--shape-fill-svg-light));}.css-lp7pnk .themed-table{border:0.0625em solid var(--neutral-border-color);border-radius:var(--box-border-radius);}.css-lp7pnk .themed-table tbody tr:nth-of-type(even){background-color:var(--chakra-colors-blackAlpha-50);}.css-lp7pnk .themed-table tbody tr:nth-of-type(odd){background-color:var(--chakra-colors-whiteAlpha-50);}.css-lp7pnk .themed-table tbody tr:first-of-type td:first-of-type{border-top-left-radius:var(--box-border-radius);}.css-lp7pnk .themed-table tbody tr:first-of-type td:last-of-type{border-top-right-radius:var(--box-border-radius);}.css-lp7pnk .themed-table tbody tr:last-child td:first-of-type{border-bottom-left-radius:var(--box-border-radius);}.css-lp7pnk .themed-table tbody tr:last-child td:last-of-type{border-bottom-right-radius:var(--box-border-radius);}.css-lp7pnk .themed-table td{border-inline-start:0.0625em solid var(--shape-border-color);}.css-lp7pnk .themed-table td:first-of-type{border-inline-start-width:0;}.css-lp7pnk .card-code-item h1{font-size:2em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .card-code-item h1{font-size:2.5em;}}@media print{.css-lp7pnk .card-code-item h1{font-size:2.5em;}}.css-lp7pnk .card-code-item h2{font-size:1.5em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .card-code-item h2{font-size:2em;}}@media print{.css-lp7pnk .card-code-item h2{font-size:2em;}}.css-lp7pnk .card-code-item h3{font-size:1.25em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .card-code-item h3{font-size:1.5em;}}@media print{.css-lp7pnk .card-code-item h3{font-size:1.5em;}}.css-lp7pnk .card-code-item h4{font-size:1.1em;line-height:var(--line-height-heading);}@media screen and (min-width: 30em){.css-lp7pnk .card-code-item h4{font-size:1.25em;}}@media print{.css-lp7pnk .card-code-item h4{font-size:1.25em;}}.css-lp7pnk .card-code-item h1,.css-lp7pnk .card-code-item h2,.css-lp7pnk .card-code-item h3,.css-lp7pnk .card-code-item h4,.css-lp7pnk .card-code-item h5,.css-lp7pnk .card-code-item h6{font-weight:var(--heading-font-weight);font-family:var(--heading-font);color:var(--heading-color);background:unset;-webkit-background-clip:unset;background-clip:unset;width:100%;max-width:100%;letter-spacing:var(--letter-spacing-heading);text-transform:var(--heading-transform);}.css-lp7pnk .card-code-item img:not([src]){width:100%;background-color:var(--chakra-colors-gray-200);border-radius:var(--box-border-radius);aspect-ratio:16/9;}.css-lp7pnk .card-code-item >*{border-radius:var(--card-border-radius);}
+					</style>
+					<div
+						data-navbar-editor="true"
+						class="editor-navbar-animations-enabled css-lp7pnk"
+						style="
+							--animation-yOffset: 20px;
+							--animation-transition-property: opacity, transform;
+							--animation-transition-duration: 1s;
+							--animation-transition-delay: 0.15s;
+							--animation-easing-function: cubic-bezier(
+								0.22,
+								1,
+								0.36,
+								1
+							);
+						"
+					>
+						<div class="ProseMirror">
+							<div
+								data-node-view-wrapper=""
+								style="white-space: normal"
+							>
+								<div
+									data-node-view-content=""
+									style="white-space: pre-wrap"
+								>
+									<div
+										data-node-view-content-inner="doc"
+										style="white-space: inherit"
+									>
+										<div
+											data-pos="1"
+											class="react-renderer node-navbar"
+											style="white-space: inherit;undefined"
+										>
+											<div
+												data-node-view-wrapper=""
+												style="white-space: normal"
+											>
+												<style
+													data-emotion="css q94y1c"
+												>
+													.css-q94y1c {
+														display: -webkit-box;
+														display: -webkit-flex;
+														display: -ms-flexbox;
+														display: flex;
+														-webkit-flex-direction: column;
+														-ms-flex-direction: column;
+														flex-direction: column;
+														-webkit-align-items: center;
+														-webkit-box-align: center;
+														-ms-flex-align: center;
+														align-items: center;
+														-webkit-box-pack: center;
+														-ms-flex-pack: center;
+														-webkit-justify-content: center;
+														justify-content: center;
+														position: relative;
+														width: 100%;
+														padding: 10px;
+														z-index: 1;
+														height: 75px;
+													}
+												</style>
+												<div class="css-q94y1c">
+													<style
+														data-emotion="css 1sp6d9d"
+													>
+														.css-1sp6d9d {
+															position: absolute;
+															inset: 0px;
+															box-shadow: var(
+																--card-shadow
+															);
+															-webkit-backdrop-filter: var(
+																--card-backdrop-filter
+															);
+															backdrop-filter: var(
+																--card-backdrop-filter
+															);
+															background-color: var(
+																--card-background-color
+															);
+															background-image: var(
+																--card-background-image
+															);
+															border-radius: var(
+																--card-border-radius
+															);
+														}
+														@media print {
+															.css-1sp6d9d {
+																box-shadow: var(
+																	--card-box-shadow
+																);
+																border: var(
+																	--card-border
+																);
+															}
+														}
+													</style>
+													<div
+														data-id="navbar-view-backdrop"
+														class="navbar-view-backdrop css-1sp6d9d"
+														style="
+															border-radius: 0px;
+														"
+													></div>
+													<style
+														data-emotion="css 1vsvk4v"
+													>
+														.css-1vsvk4v {
+															display: -webkit-box;
+															display: -webkit-flex;
+															display: -ms-flexbox;
+															display: flex;
+															-webkit-align-items: center;
+															-webkit-box-align: center;
+															-ms-flex-align: center;
+															align-items: center;
+															-webkit-flex-direction: row;
+															-ms-flex-direction: row;
+															flex-direction: row;
+															gap: var(
+																--chakra-space-4
+															);
+															max-width: 64.5em;
+															width: 100%;
+															font-size: 1em;
+														}
+														.css-1vsvk4v
+															.header-dropdown {
+															box-shadow: var(
+																--card-shadow
+															);
+															-webkit-backdrop-filter: var(
+																--card-backdrop-filter
+															);
+															backdrop-filter: var(
+																--card-backdrop-filter
+															);
+															background-color: var(
+																--card-background-color
+															);
+															background-image: var(
+																--card-background-image
+															);
+															border-radius: var(
+																--card-border-radius
+															);
+														}
+														@media print {
+															.css-1vsvk4v
+																.header-dropdown {
+																box-shadow: var(
+																	--card-box-shadow
+																);
+																border: var(
+																	--card-border
+																);
+															}
+														}
+														.css-1vsvk4v
+															[data-node-view-content-inner="navbar"] {
+															display: -webkit-box;
+															display: -webkit-flex;
+															display: -ms-flexbox;
+															display: flex;
+															width: 100%;
+															-webkit-flex-direction: row;
+															-ms-flex-direction: row;
+															flex-direction: row;
+															-webkit-align-items: center;
+															-webkit-box-align: center;
+															-ms-flex-align: center;
+															align-items: center;
+														}
+														.css-1vsvk4v
+															.node-navbarLinks {
+															-webkit-box-flex: 1;
+															-webkit-flex-grow: 1;
+															-ms-flex-positive: 1;
+															flex-grow: 1;
+														}
+														.css-1vsvk4v
+															.node-navbarButtons {
+															margin-left: 0.5em;
+														}
+														.css-1vsvk4v
+															.node-buttonGroup {
+															-webkit-box-flex: 0;
+															-webkit-flex-grow: 0;
+															-ms-flex-positive: 0;
+															flex-grow: 0;
+															--button-group-direction: row-reverse;
+														}
+														.css-1vsvk4v
+															.node-buttonGroup
+															[data-node-view-content-inner="button"] {
+															white-space: nowrap !important;
+														}
+													</style>
+													<div
+														class="chakra-stack navbar-view-content css-1vsvk4v"
+													>
+														<style
+															data-emotion="css 1758bol"
+														>
+															.css-1758bol {
+																height: 55px;
+																width: calc(
+																	55px *
+																		2.415938864628821
+																);
+															}</style
+														><style
+															data-emotion="css 1ckgtaq"
+														>
+															.css-1ckgtaq {
+																transition-property: var(
+																	--chakra-transition-property-common
+																);
+																transition-duration: var(
+																	--chakra-transition-duration-fast
+																);
+																transition-timing-function: var(
+																	--chakra-transition-easing-ease-out
+																);
+																cursor: pointer;
+																-webkit-text-decoration: none;
+																text-decoration: none;
+																outline: 2px
+																	solid
+																	transparent;
+																outline-offset: 2px;
+																color: inherit;
+																height: 55px;
+																width: calc(
+																	55px *
+																		2.415938864628821
+																);
+															}
+															.css-1ckgtaq:hover,
+															.css-1ckgtaq[data-hover] {
+																-webkit-text-decoration: underline;
+																text-decoration: underline;
+															}
+															.css-1ckgtaq:focus-visible,
+															.css-1ckgtaq[data-focus-visible] {
+																box-shadow: var(
+																	--chakra-shadows-outline
+																);
+															}</style
+														><a
+															class="chakra-link css-1ckgtaq"
+															href=""
+															><style
+																data-emotion="css qdflh6"
+															>
+																.css-qdflh6 {
+																	position: relative;
+																	cursor: default;
+																	height: 100%;
+																	transition-property: filter
+																		background;
+																	transition-duration: var(
+																		--chakra-transition-duration-normal
+																	);
+																}
+															</style>
+															<div
+																contenteditable="false"
+																class="css-qdflh6"
+															>
+																<style
+																	data-emotion="css 1bu7r2x"
+																>
+																	.css-1bu7r2x {
+																		display: -webkit-box;
+																		display: -webkit-flex;
+																		display: -ms-flexbox;
+																		display: flex;
+																		position: relative;
+																		-webkit-background-size: contain;
+																		background-size: contain;
+																		background-repeat: no-repeat;
+																		background-image: url("https://imgproxy.gamma.app/resize/quality:80/resizing_type:fit/width:2000/height:2000/https://cdn.gamma.app/465l3fbfvbz98bc/3117eb74e2e84f11afa3e15a18857b28/original/Unschool-Discoveries-B-logo.png");
+																		-webkit-background-position: center;
+																		background-position: center;
+																		width: 100%;
+																		height: 100%;
+																		border-radius: var(
+																			--chakra-radii-none
+																		);
+																		transition-property: border-radius;
+																		transition-duration: var(
+																			--chakra-transition-duration-normal
+																		);
+																		cursor: pointer;
+																		aspect-ratio: 2.415938864628821px;
+																	}
+																</style>
+																<div
+																	data-content-reference="true"
+																	data-change-focus-point-el="true"
+																	class="card-layout-cell-bg css-1bu7r2x"
+																></div></div
+														></a>
+														<div
+															style="
+																white-space: pre-wrap;
+																flex: 1;
+															"
+															data-node-view-content=""
+														>
+															<div
+																data-node-view-content-inner="navbar"
+																style="
+																	white-space: inherit;
+																"
+															>
+																<div
+																	data-pos="1"
+																	class="react-renderer node-navbarLinks"
+																	style="white-space: inherit;undefined"
+																>
+																	<div
+																		style="
+																			white-space: normal;
+																		"
+																		data-node-view-wrapper=""
+																	>
+																		<style
+																			data-emotion="css 1f84zi3"
+																		>
+																			.css-1f84zi3 {
+																				display: -webkit-box;
+																				display: -webkit-flex;
+																				display: -ms-flexbox;
+																				display: flex;
+																				-webkit-flex-direction: row;
+																				-ms-flex-direction: row;
+																				flex-direction: row;
+																				-webkit-box-pack: center;
+																				-ms-flex-pack: center;
+																				-webkit-justify-content: center;
+																				justify-content: center;
+																				width: 100%;
+																				border-radius: var(
+																					--box-border-radius
+																				);
+																				padding-left: var(
+																					--chakra-space-4
+																				);
+																				font-family: var(
+																					--body-font
+																				);
+																				gap: 0.5em;
+																				--button-width: auto;
+																			}
+																			.css-1f84zi3
+																				> [data-node-view-content] {
+																				display: contents;
+																			}
+																			.css-1f84zi3
+																				> [data-node-view-content]
+																				> [data-node-view-content-inner] {
+																				display: contents;
+																			}
+																			.css-1f84zi3
+																				.node-button {
+																				width: var(
+																					--button-width
+																				);
+																			}
+																			.css-1f84zi3
+																				.node-button
+																				.button {
+																				width: 100%;
+																			}
+																			.css-1f84zi3:hover
+																				.add-button,
+																			.css-1f84zi3[data-hover]
+																				.add-button {
+																				opacity: 1;
+																			}
+																			.css-1f84zi3
+																				.button[data-variant="link"] {
+																				outline-style: none;
+																				outline-width: 1px;
+																				outline-color: var(
+																					--grid-outline-color
+																				);
+																				color: var(
+																					--body-color
+																				);
+																				font-weight: var(
+																					--body-font-weight
+																				);
+																			}
+																			.css-1f84zi3
+																				.button[data-variant="link"]:hover::after,
+																			.css-1f84zi3
+																				.button[data-variant="link"][data-hover]::after {
+																				content: "";
+																				position: absolute;
+																				width: 100%;
+																				left: 0px;
+																				bottom: 0.125em;
+																				height: 0.25em;
+																				border-radius: inherit;
+																				z-index: 0;
+																				background-color: var(
+																					--link-color
+																				);
+																				background-image: var(
+																					--accent-gradient
+																				);
+																			}
+																			.css-1f84zi3
+																				.button[data-variant="link"][data-is-current-page="true"] {
+																				color: var(
+																					--link-color
+																				);
+																			}
+																			.css-1f84zi3
+																				.button[data-variant="link"][data-is-current-page="true"]::after {
+																				content: "";
+																				position: absolute;
+																				width: 100%;
+																				left: 0px;
+																				bottom: 0.125em;
+																				height: 0.25em;
+																				border-radius: inherit;
+																				z-index: 0;
+																				background-color: var(
+																					--link-color
+																				);
+																				background-image: var(
+																					--accent-gradient
+																				);
+																			}
+																		</style>
+																		<div
+																			data-selection-ring="padded"
+																			class="css-1f84zi3"
+																		>
+																			<div
+																				data-node-view-content=""
+																				style="
+																					white-space: pre-wrap;
+																				"
+																			>
+																				<div
+																					data-node-view-content-inner="navbarLinks"
+																					style="
+																						white-space: inherit;
+																					"
+																				>
+																					<div
+																						data-pos="2"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<style
+																								data-emotion="css ets70v"
+																							>
+																								.css-ets70v {
+																									-webkit-appearance: none;
+																									-moz-appearance: none;
+																									-ms-appearance: none;
+																									appearance: none;
+																									-webkit-align-items: center;
+																									-webkit-box-align: center;
+																									-ms-flex-align: center;
+																									align-items: center;
+																									-webkit-box-pack: center;
+																									-ms-flex-pack: center;
+																									-webkit-justify-content: center;
+																									justify-content: center;
+																									white-space: nowrap;
+																									vertical-align: middle;
+																									border-radius: inherit;
+																									font-weight: 600;
+																									transition-duration: var(
+																										--chakra-transition-duration-normal
+																									);
+																									color: inherit;
+																									font-family: inherit;
+																									background: none;
+																									margin: 0px;
+																									padding: 0px;
+																									background-color: inherit;
+																									cursor: pointer;
+																									-webkit-user-select: none;
+																									-moz-user-select: none;
+																									-ms-user-select: none;
+																									user-select: none;
+																									display: -webkit-inline-box;
+																									display: -webkit-inline-flex;
+																									display: -ms-inline-flexbox;
+																									display: inline-flex;
+																									position: relative;
+																									min-width: min(
+																										100%,
+																										12em
+																									);
+																									max-width: 100%;
+																									font-size: 1em;
+																									padding-top: 0.5em;
+																									padding-bottom: 0.5em;
+																									min-height: 2.75em;
+																									width: var(
+																										--button-width
+																									);
+																									height: auto;
+																									-webkit-padding-start: 0.5em;
+																									padding-inline-start: 0.5em;
+																									-webkit-padding-end: 0.5em;
+																									padding-inline-end: 0.5em;
+																									transition-property: none;
+																									line-height: var(
+																										--line-height-body
+																									);
+																								}
+																								.css-ets70v:focus-visible,
+																								.css-ets70v[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-ets70v:disabled,
+																								.css-ets70v[disabled],
+																								.css-ets70v[aria-disabled="true"],
+																								.css-ets70v[data-disabled] {
+																									opacity: 0.4;
+																									cursor: not-allowed;
+																									box-shadow: var(
+																										--chakra-shadows-none
+																									);
+																								}
+																								.css-ets70v:hover,
+																								.css-ets70v[data-hover] {
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																								}
+																								@media print {
+																									.css-ets70v {
+																										width: auto;
+																									}
+																								}</style
+																							><style
+																								data-emotion="css p7qsvu"
+																							>
+																								.css-p7qsvu {
+																									transition-property: var(
+																										--chakra-transition-property-common
+																									);
+																									transition-duration: var(
+																										--chakra-transition-duration-fast
+																									);
+																									transition-timing-function: var(
+																										--chakra-transition-easing-ease-out
+																									);
+																									cursor: pointer;
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																									outline: 2px
+																										solid
+																										transparent;
+																									outline-offset: 2px;
+																									color: inherit;
+																									-webkit-appearance: none;
+																									-moz-appearance: none;
+																									-ms-appearance: none;
+																									appearance: none;
+																									-webkit-align-items: center;
+																									-webkit-box-align: center;
+																									-ms-flex-align: center;
+																									align-items: center;
+																									-webkit-box-pack: center;
+																									-ms-flex-pack: center;
+																									-webkit-justify-content: center;
+																									justify-content: center;
+																									white-space: nowrap;
+																									vertical-align: middle;
+																									border-radius: inherit;
+																									font-weight: 600;
+																									transition-duration: var(
+																										--chakra-transition-duration-normal
+																									);
+																									color: inherit;
+																									font-family: inherit;
+																									background: none;
+																									margin: 0px;
+																									padding: 0px;
+																									background-color: inherit;
+																									cursor: pointer;
+																									-webkit-user-select: none;
+																									-moz-user-select: none;
+																									-ms-user-select: none;
+																									user-select: none;
+																									display: -webkit-inline-box;
+																									display: -webkit-inline-flex;
+																									display: -ms-inline-flexbox;
+																									display: inline-flex;
+																									position: relative;
+																									min-width: min(
+																										100%,
+																										12em
+																									);
+																									max-width: 100%;
+																									font-size: 1em;
+																									padding-top: 0.5em;
+																									padding-bottom: 0.5em;
+																									min-height: 2.75em;
+																									width: var(
+																										--button-width
+																									);
+																									height: auto;
+																									-webkit-padding-start: 0.5em;
+																									padding-inline-start: 0.5em;
+																									-webkit-padding-end: 0.5em;
+																									padding-inline-end: 0.5em;
+																									transition-property: none;
+																									line-height: var(
+																										--line-height-body
+																									);
+																								}
+																								.css-p7qsvu:hover,
+																								.css-p7qsvu[data-hover] {
+																									-webkit-text-decoration: underline;
+																									text-decoration: underline;
+																								}
+																								.css-p7qsvu:focus-visible,
+																								.css-p7qsvu[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-p7qsvu:focus-visible,
+																								.css-p7qsvu[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-p7qsvu:disabled,
+																								.css-p7qsvu[disabled],
+																								.css-p7qsvu[aria-disabled="true"],
+																								.css-p7qsvu[data-disabled] {
+																									opacity: 0.4;
+																									cursor: not-allowed;
+																									box-shadow: var(
+																										--chakra-shadows-none
+																									);
+																								}
+																								.css-p7qsvu:hover,
+																								.css-p7qsvu[data-hover] {
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																								}
+																								@media print {
+																									.css-p7qsvu {
+																										width: auto;
+																									}
+																								}</style
+																							><a
+																								class="chakra-link chakra-button button css-p7qsvu"
+																								href="/explore-the-series"
+																								data-variant="link"
+																								style="
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://gamma.app/docs/Explore-the-Series-8yq8uu8v4f35ypa"
+																								data-is-current-page="false"
+																								><style
+																									data-emotion="css tvj5s7"
+																								>
+																									.css-tvj5s7 {
+																										overflow: hidden;
+																										text-overflow: ellipsis;
+																										display: -webkit-box;
+																										-webkit-box-orient: vertical;
+																										-webkit-line-clamp: var(
+																											--chakra-line-clamp
+																										);
+																										--chakra-line-clamp: 1;
+																										word-break: break-all;
+																										text-align: center;
+																									}
+																								</style>
+																								<div
+																									class="chakra-text css-tvj5s7"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											Books
+																										</div>
+																									</div>
+																								</div></a
+																							>
+																						</div>
+																					</div>
+																					<div
+																						data-pos="9"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<a
+																								class="chakra-link chakra-button button css-p7qsvu"
+																								href="/author-bio"
+																								data-variant="link"
+																								style="
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://gamma.app/docs/Author-Bio-bxi5yktefvhgorg"
+																								data-is-current-page="false"
+																								><div
+																									class="chakra-text css-tvj5s7"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											Author
+																										</div>
+																									</div>
+																								</div></a
+																							>
+																						</div>
+																					</div>
+																					<div
+																						data-pos="17"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<a
+																								class="chakra-link chakra-button button css-p7qsvu"
+																								href="/shop"
+																								data-variant="link"
+																								style="
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://gamma.app/docs/Unschool-Discoveries-Book-Store-n5vfhkfk6tb2mor"
+																								data-is-current-page="false"
+																								><div
+																									class="chakra-text css-tvj5s7"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											Shop
+																										</div>
+																									</div>
+																								</div></a
+																							>
+																						</div>
+																					</div>
+																					<div
+																						data-pos="23"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<a
+																								class="chakra-link chakra-button button css-p7qsvu"
+																								href="/unschool-pages-hub"
+																								data-variant="link"
+																								style="
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://gamma.app/docs/Unschool-Pages-Hu-5as0gouq6zekl19"
+																								data-is-current-page="false"
+																								><div
+																									class="chakra-text css-tvj5s7"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											Community
+																										</div>
+																									</div>
+																								</div></a
+																							>
+																						</div>
+																					</div>
+																					<div
+																						data-pos="34"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<a
+																								class="chakra-link chakra-button button css-p7qsvu"
+																								href="/about"
+																								data-variant="link"
+																								style="
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://gamma.app/docs/About-Unschool-Discoveries-30bjzjv7qm54b8s"
+																								data-is-current-page="false"
+																								><div
+																									class="chakra-text css-tvj5s7"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											About
+																										</div>
+																									</div>
+																								</div></a
+																							>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	data-pos="42"
+																	class="react-renderer node-navbarButtons"
+																	style="white-space: inherit;undefined"
+																>
+																	<div
+																		style="
+																			white-space: normal;
+																		"
+																		data-node-view-wrapper=""
+																	>
+																		<style
+																			data-emotion="css 1795w41"
+																		>
+																			.css-1795w41 {
+																				display: -webkit-box;
+																				display: -webkit-flex;
+																				display: -ms-flexbox;
+																				display: flex;
+																				-webkit-flex-direction: row-reverse;
+																				-ms-flex-direction: row-reverse;
+																				flex-direction: row-reverse;
+																				--chakra-space-x-reverse: 1;
+																				--chakra-divide-x-reverse: 1;
+																				width: 100%;
+																				border-radius: var(
+																					--box-border-radius
+																				);
+																				font-family: var(
+																					--body-font
+																				);
+																				gap: 0.5em;
+																				--button-width: auto;
+																			}
+																			.css-1795w41
+																				> [data-node-view-content] {
+																				display: contents;
+																			}
+																			.css-1795w41
+																				> [data-node-view-content]
+																				> [data-node-view-content-inner] {
+																				display: contents;
+																			}
+																			.css-1795w41
+																				.node-button {
+																				width: var(
+																					--button-width
+																				);
+																			}
+																			.css-1795w41
+																				.node-button
+																				.button {
+																				width: 100%;
+																			}
+																			.css-1795w41:hover
+																				.add-button,
+																			.css-1795w41[data-hover]
+																				.add-button {
+																				opacity: 1;
+																			}
+																		</style>
+																		<div
+																			data-selection-ring="padded"
+																			class="css-1795w41"
+																		>
+																			<div
+																				data-node-view-content=""
+																				style="
+																					white-space: pre-wrap;
+																				"
+																			>
+																				<div
+																					data-node-view-content-inner="navbarButtons"
+																					style="
+																						white-space: inherit;
+																					"
+																				>
+																					<div
+																						data-pos="43"
+																						class="react-renderer node-button"
+																						style="white-space: inherit;undefined"
+																					>
+																						<div
+																							data-node-view-wrapper=""
+																							style="
+																								white-space: normal;
+																							"
+																						>
+																							<style
+																								data-emotion="css 11eu7i7"
+																							>
+																								.css-11eu7i7 {
+																									-webkit-appearance: none;
+																									-moz-appearance: none;
+																									-ms-appearance: none;
+																									appearance: none;
+																									-webkit-align-items: center;
+																									-webkit-box-align: center;
+																									-ms-flex-align: center;
+																									align-items: center;
+																									-webkit-box-pack: center;
+																									-ms-flex-pack: center;
+																									-webkit-justify-content: center;
+																									justify-content: center;
+																									white-space: nowrap;
+																									vertical-align: middle;
+																									border-radius: inherit;
+																									font-weight: 600;
+																									transition-duration: var(
+																										--chakra-transition-duration-normal
+																									);
+																									color: inherit;
+																									font-family: inherit;
+																									background: none;
+																									margin: 0px;
+																									padding: 0px;
+																									background-color: inherit;
+																									cursor: pointer;
+																									-webkit-user-select: none;
+																									-moz-user-select: none;
+																									-ms-user-select: none;
+																									user-select: none;
+																									display: -webkit-inline-box;
+																									display: -webkit-inline-flex;
+																									display: -ms-inline-flexbox;
+																									display: inline-flex;
+																									position: relative;
+																									min-width: min(
+																										100%,
+																										12em
+																									);
+																									max-width: 100%;
+																									font-size: 1em;
+																									padding-top: 0.5em;
+																									padding-bottom: 0.5em;
+																									min-height: 2.75em;
+																									width: var(
+																										--button-width
+																									);
+																									height: auto;
+																									-webkit-padding-start: 1em;
+																									padding-inline-start: 1em;
+																									-webkit-padding-end: 1em;
+																									padding-inline-end: 1em;
+																									transition-property: none;
+																									line-height: var(
+																										--line-height-body
+																									);
+																								}
+																								.css-11eu7i7:focus-visible,
+																								.css-11eu7i7[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-11eu7i7:disabled,
+																								.css-11eu7i7[disabled],
+																								.css-11eu7i7[aria-disabled="true"],
+																								.css-11eu7i7[data-disabled] {
+																									opacity: 0.4;
+																									cursor: not-allowed;
+																									box-shadow: var(
+																										--chakra-shadows-none
+																									);
+																								}
+																								.css-11eu7i7:hover,
+																								.css-11eu7i7[data-hover] {
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																								}
+																								@media print {
+																									.css-11eu7i7 {
+																										width: auto;
+																									}
+																								}</style
+																							><style
+																								data-emotion="css 1n705t"
+																							>
+																								.css-1n705t {
+																									transition-property: var(
+																										--chakra-transition-property-common
+																									);
+																									transition-duration: var(
+																										--chakra-transition-duration-fast
+																									);
+																									transition-timing-function: var(
+																										--chakra-transition-easing-ease-out
+																									);
+																									cursor: pointer;
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																									outline: 2px
+																										solid
+																										transparent;
+																									outline-offset: 2px;
+																									color: inherit;
+																									-webkit-appearance: none;
+																									-moz-appearance: none;
+																									-ms-appearance: none;
+																									appearance: none;
+																									-webkit-align-items: center;
+																									-webkit-box-align: center;
+																									-ms-flex-align: center;
+																									align-items: center;
+																									-webkit-box-pack: center;
+																									-ms-flex-pack: center;
+																									-webkit-justify-content: center;
+																									justify-content: center;
+																									white-space: nowrap;
+																									vertical-align: middle;
+																									border-radius: inherit;
+																									font-weight: 600;
+																									transition-duration: var(
+																										--chakra-transition-duration-normal
+																									);
+																									color: inherit;
+																									font-family: inherit;
+																									background: none;
+																									margin: 0px;
+																									padding: 0px;
+																									background-color: inherit;
+																									cursor: pointer;
+																									-webkit-user-select: none;
+																									-moz-user-select: none;
+																									-ms-user-select: none;
+																									user-select: none;
+																									display: -webkit-inline-box;
+																									display: -webkit-inline-flex;
+																									display: -ms-inline-flexbox;
+																									display: inline-flex;
+																									position: relative;
+																									min-width: min(
+																										100%,
+																										12em
+																									);
+																									max-width: 100%;
+																									font-size: 1em;
+																									padding-top: 0.5em;
+																									padding-bottom: 0.5em;
+																									min-height: 2.75em;
+																									width: var(
+																										--button-width
+																									);
+																									height: auto;
+																									-webkit-padding-start: 1em;
+																									padding-inline-start: 1em;
+																									-webkit-padding-end: 1em;
+																									padding-inline-end: 1em;
+																									transition-property: none;
+																									line-height: var(
+																										--line-height-body
+																									);
+																								}
+																								.css-1n705t:hover,
+																								.css-1n705t[data-hover] {
+																									-webkit-text-decoration: underline;
+																									text-decoration: underline;
+																								}
+																								.css-1n705t:focus-visible,
+																								.css-1n705t[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-1n705t:focus-visible,
+																								.css-1n705t[data-focus-visible] {
+																									box-shadow: var(
+																										--chakra-shadows-outline
+																									);
+																								}
+																								.css-1n705t:disabled,
+																								.css-1n705t[disabled],
+																								.css-1n705t[aria-disabled="true"],
+																								.css-1n705t[data-disabled] {
+																									opacity: 0.4;
+																									cursor: not-allowed;
+																									box-shadow: var(
+																										--chakra-shadows-none
+																									);
+																								}
+																								.css-1n705t:hover,
+																								.css-1n705t[data-hover] {
+																									-webkit-text-decoration: none;
+																									text-decoration: none;
+																								}
+																								@media print {
+																									.css-1n705t {
+																										width: auto;
+																									}
+																								}</style
+																							><a
+																								class="chakra-link chakra-button button themed-heading-no-gradient css-1n705t"
+																								href="https://kidofamilyranchpublishing.square.site/product/hardcoverbook1/5?cs=true&amp;cst=custom"
+																								data-variant="solid"
+																								style="
+																									background-color: var(
+																										--button-color
+																									);
+																									background-image: var(
+																										--button-gradient
+																									);
+																									border-radius: var(
+																										--button-border-radius,
+																										var(
+																											--box-border-radius
+																										)
+																									);
+																									font-family: var(
+																										--body-font
+																									);
+																								"
+																								data-export-as-image="true"
+																								data-export-link="https://kidofamilyranchpublishing.square.site/product/hardcoverbook1/5?cs=true&amp;cst=custom"
+																								data-is-current-page="false"
+																								><div
+																									class="chakra-text css-tvj5s7"
+																									style="
+																										color: var(
+																											--button-color-inverted
+																										);
+																									"
+																								>
+																									<div
+																										data-node-view-content=""
+																										style="
+																											white-space: pre-wrap;
+																										"
+																									>
+																										<div
+																											data-node-view-content-inner="button"
+																											style="
+																												white-space: inherit;
+																											"
+																										>
+																											Order
+																											A
+																											Hard
+																											Copy
+																										</div>
+																									</div>
+																							
+				<style data-emotion="css 1kxonj9">
+					.css-1kxonj9 {
+						width: 100%;
+						position: relative;
+					}
+				</style>

@@ -1,0 +1,199 @@
+.site-animations-bootstrap .editor-navbar-animations-enabled .ProseMirror {}
+
+.site-animations-bootstrap .editor-navbar-animations-enabled .ProseMirror .navbar-view-content {
+    opacity: 1;
+    transform: none;
+}
+
+.site-animations-bootstrap .editor-navbar-animations-enabled .ProseMirror .navbar-view-backdrop {
+    box-shadow: var(--md-shadow), var(--card-border-shadow);
+}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror {}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-accent,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child {}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load.animatable-on-load-atom,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load:not(.animatable-on-load-annotatable),
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load.animatable-on-load-annotatable [data-node-view-content],
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-accent.animatable-on-load-atom,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-accent:not(.animatable-on-load-annotatable),
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-accent.animatable-on-load-annotatable [data-node-view-content],
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child.animatable-on-load-atom,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child:not(.animatable-on-load-annotatable),
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child.animatable-on-load-annotatable [data-node-view-content] {
+    opacity: 1;
+    transform: none;
+    transition-property: var(--animation-transition-property);
+    transition-duration: var(--animation-transition-duration);
+    transition-timing-function: var(--animation-easing-function);
+}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-as-block {}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-as-block:not(.block-calloutBox),
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-as-block.block-calloutBox .calloutBox {
+    opacity: 1;
+    transform: none;
+    transition-property: var(--animation-transition-property);
+    transition-duration: var(--animation-transition-duration);
+    transition-timing-function: var(--animation-easing-function);
+}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .is-present-mode .animatable-on-load,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .is-full-width .animatable-on-load {}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .is-present-mode .animatable-on-load.animatable-on-load-accent,
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .is-full-width .animatable-on-load.animatable-on-load-accent {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child.block-image {
+    opacity: 1;
+    transform: none;
+    transition-property: var(--animation-transition-property);
+    transition-duration: var(--animation-transition-duration);
+    transition-timing-function: var(--animation-easing-function);
+}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child.node-smartLayoutCell {}
+
+.site-animations-bootstrap .editor-animations-enabled .ProseMirror .animatable-on-load-content-child.node-smartLayoutCell [data-spotlight-parent]>* {
+    opacity: 1;
+    transform: none;
+    transition-property: var(--animation-transition-property);
+    transition-duration: var(--animation-transition-duration);
+    transition-timing-function: var(--animation-easing-function);
+}
+
+@media not print {
+    .editor-navbar-animations-enabled .ProseMirror {
+        .navbar-view-content {
+            opacity: 0;
+            transform: translatey(var(--animation-yOffset));
+            transition-property: opacity, transform;
+            transition-duration: 1s;
+            transition-timing-function: var(--animation-easing-function);
+
+            &.animate-has-animated {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .navbar-view-backdrop {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            transition-property: box-shadow;
+            transition-duration: 1s;
+            transition-timing-function: var(--animation-easing-function);
+
+            &.animate-has-animated {
+                box-shadow:
+                    var(--md-shadow),
+                    var(--card-border-shadow);
+            }
+        }
+    }
+
+    .editor-animations-enabled .ProseMirror {
+
+        .animatable-on-load,
+        .animatable-on-load-accent,
+        .animatable-on-load-content-child {
+
+            &.animatable-on-load-atom,
+            &:not(.animatable-on-load-annotatable),
+            &.animatable-on-load-annotatable [data-node-view-content] {
+                opacity: 0;
+                transform: translatey(var(--animation-yOffset));
+                transition-property: var(--animation-transition-property);
+                transition-duration: var(--animation-transition-duration);
+                transition-timing-function: var(--animation-easing-function);
+            }
+
+            &.animate-has-animated {
+
+                &.animatable-on-load-atom,
+                &:not(.animatable-on-load-annotatable),
+                &.animatable-on-load-annotatable [data-node-view-content] {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+
+        .animatable-on-load-as-block {
+
+            &:not(.block-calloutBox),
+            &.block-calloutBox .calloutBox {
+                opacity: 0;
+                transform: translatey(var(--animation-yOffset));
+                transition-property: var(--animation-transition-property);
+                transition-duration: var(--animation-transition-duration);
+                transition-timing-function: var(--animation-easing-function);
+            }
+
+            &.animate-has-animated {
+
+                &:not(.block-calloutBox),
+                &.block-calloutBox .calloutBox {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+
+        .is-present-mode .animatable-on-load,
+        .is-full-width .animatable-on-load {
+            &.animatable-on-load-accent {
+                opacity: 0;
+                transform: scale(0.9);
+
+                &.animate-has-animated {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .animatable-on-load-content-child.block-image {
+            opacity: 0;
+            transition-property: var(--animation-transition-property);
+            transition-duration: var(--animation-transition-duration);
+            transition-timing-function: var(--animation-easing-function);
+            transform: translatey(var(--animation-yOffset));
+
+            &.animate-has-animated {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .node-gallery .animatable-on-load-content-child.block-image {
+            transition-delay: calc(var(--animation-transition-delay) * var(--animate-index));
+        }
+
+        .animatable-on-load-content-child.node-smartLayoutCell {
+            [data-spotlight-parent]>* {
+                opacity: 0;
+                transition-property: var(--animation-transition-property);
+                transition-duration: var(--animation-transition-duration);
+                transition-timing-function: var(--animation-easing-function);
+                transform: translatey(var(--animation-yOffset));
+                transition-delay: calc(var(--animation-transition-delay) * var(--animate-index));
+            }
+
+            &.animate-has-animated [data-spotlight-parent]>* {
+                opacity: 1;
+                transform: none;
+            }
+
+            &.animate-has-animated [data-spotlight-parent].smart-layout-cell-not-emphasized>* {
+                opacity: 0.5;
+            }
+        }
+    }
+}
