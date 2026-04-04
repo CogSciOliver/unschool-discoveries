@@ -1,0 +1,36 @@
+.hero {
+  padding: clamp(3.5rem, 9vw, 6rem);
+  margin: 1rem 0 2rem;
+  background: var(--gradient-hero);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  box-shadow: var(--shadow-card);
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.page-hero h1 {
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  color: var(--text-main);
+}
+
+.lead {
+  max-width: 24ch;
+  margin-top: 1.35rem;
+  color: var(--text-soft);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.page-hero {
+  padding: 2rem 0 1rem;
+}

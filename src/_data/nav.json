@@ -1,0 +1,11 @@
+[
+  { "title": "Home", "url": "/" },
+  { "title": "Start Here", "url": "/start-here/" },
+  { "title": "Books", "url": "/books/" },
+  { "title": "Investigate", "url": "/investigate/" },
+  { "title": "Media", "url": "/media/" },
+  { "title": "Newsletter", "url": "/newsletter/" },
+  { "title": "Coming Soon", "url": "/coming-soon/" },
+  { "title": "Unschool Pages", "url": "https://unschoolpages.unschooldiscoveries.com", "external": true },
+  { "title": "About", "url": "/about/" }
+]

@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="hero">
+  <p class="eyebrow">Welcome to the story world</p>
+  <h1>{{ title }}</h1>
+  <p class="lead">{{ intro }}</p>
+
+  <div class="actions">
+    <a class="button" href="/start-here/">Start Here</a>
+    <a class="button button-secondary" href="/books/venturing-into-the-unknown/">Explore the Book</a>
+    <a class="button button-secondary" href="{{ site.unschoolPagesUrl }}">Unschool Pages</a>
+  </div>
+</section>
+
+{% set featured = (books | selectattr("featured") | list | first) %}
+
+{% if featured %}
+<section class="panel">
+  <div class="grid two">
+    <div>
+      <img src="{{ featured.cover }}" alt="{{ featured.title }} cover">
+    </div>
+    <div>
+      <p class="eyebrow">Featured Book</p>
+      <h2>{{ featured.title }}</h2>
+      <p>{{ featured.hook }}</p>
+      <p><strong>Formats:</strong> {{ featured.formats | join(", ") }}</p>
+      <a class="button" href="{{ featured.url }}">View Book</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="panel">
+  <h2>Choose your path</h2>
+  <div class="grid three">
+    <a class="card" href="/start-here/">
+      <h3>New here?</h3>
+      <p>Get oriented fast.</p>
+    </a>
+
+    <a class="card" href="/investigate/">
+      <h3>Investigate</h3>
+      <p>Follow clues, themes, and reader trails.</p>
+    </a>
+
+    <a class="card" href="/media/">
+      <h3>Media</h3>
+      <p>Press info, images, and releases.</p>
+    </a>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Continue on Unschool Pages</h2>
+  <p>The living notebook, rabbit holes, and behind-the-scenes publication platform.</p>
+  <a class="button" href="{{ site.unschoolPagesUrl }}">Go to Unschool Pages</a>
+</section>
+
+<section class="panel">
+  <h2>Stay in the loop</h2>
+  <p>Get book news, release updates, and new discoveries.</p>
+  <a class="button" href="/newsletter/">Join the Newsletter</a>
+</section>

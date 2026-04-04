@@ -1,0 +1,28 @@
+.wrap {
+  width: min(var(--container-max), calc(100% - (var(--container-pad) * 2)));
+  margin: 0 auto;
+}
+
+main.wrap {
+  padding-bottom: 5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.grid.two {
+  grid-template-columns: minmax(280px, 0.95fr) minmax(320px, 1fr);
+  align-items: center;
+}
+
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.panel,
+.page-hero,
+.page-body {
+  margin-bottom: 2rem;
+}

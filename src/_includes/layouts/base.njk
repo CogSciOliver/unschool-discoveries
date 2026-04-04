@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">{{ site.title }}</a>
+
+      <nav class="site-nav">
+        {% for item in nav %}
+          <a
+            href="{{ item.url }}"
+            {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+          >
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>{{ site.title }} — {{ site.tagline }}</p>
+      <p><a href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a></p>
+    </div>
+  </footer>
+</body>
+</html>

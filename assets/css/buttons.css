@@ -1,0 +1,36 @@
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 0.95rem 1.45rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(22, 28, 72, 0.18);
+  background: rgba(17, 18, 27, 0.96);
+  color: var(--text-inverse);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.02rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--text-main);
+  backdrop-filter: blur(calc(var(--blur-glass) * 0.75));
+  -webkit-backdrop-filter: blur(calc(var(--blur-glass) * 0.75));
+}

@@ -1,0 +1,36 @@
+@media (max-width: 960px) {
+  .site-header .wrap,
+  .footer-inner,
+  .grid.two,
+  .grid.three {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding: 2.4rem 1.4rem;
+  }
+
+  .lead {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .brand {
+    max-width: none;
+  }
+}

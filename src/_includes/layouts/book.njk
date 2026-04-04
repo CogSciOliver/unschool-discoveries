@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+---
+
+{% set book = (books | selectattr("slug", "equalto", book_key) | list | first) %}
+
+<section class="page-hero">
+  <p class="eyebrow">Book</p>
+  <h1>{{ book.title }}</h1>
+  <p class="lead">{{ book.hook }}</p>
+</section>
+
+<section class="panel">
+  <div class="grid two">
+    <div>
+      <img src="{{ book.cover }}" alt="{{ book.title }} cover">
+    </div>
+    <div>
+      <p><strong>Formats:</strong> {{ book.formats | join(", ") }}</p>
+      {{ content | safe }}
+      <div class="actions">
+        <a class="button" href="/newsletter/">Get Updates</a>
+        <a class="button button-secondary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+      </div>
+    </div>
+  </div>
+</section>
