@@ -1,0 +1,30 @@
+.container {
+	width: min(var(--container-max), calc(100% - (var(--container-pad) * 2)));
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.two-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: clamp(1.5rem, 4vw, 4rem);
+	align-items: center;
+}
+
+.hero {
+	padding: clamp(5rem, 11vw, 8rem) 0;
+}
+
+#order,
+.book-section,
+.section-alt,
+#home,
+#testimonials,
+.cta {
+	width: min(var(--container-max), calc(100% - (var(--container-pad) * 2)));
+	margin: 0 auto 2rem;
+	padding: var(--section-pad) clamp(1.25rem, 3vw, 2rem);
+}

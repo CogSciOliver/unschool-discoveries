@@ -1,0 +1,22 @@
+.hero .container {
+	background: var(--gradient-soft);
+	border: 1px solid var(--border-soft);
+	border-radius: var(--radius-lg);
+	padding: clamp(2rem, 5vw, 4rem);
+	backdrop-filter: blur(var(--blur-glass));
+	-webkit-backdrop-filter: blur(var(--blur-glass));
+	box-shadow: var(--shadow-card);
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: clamp(2.4rem, 5vw, 4.8rem);
+	margin-bottom: 1rem;
+	color: var(--text-main);
+}
+
+.hero p {
+	max-width: 62ch;
+	margin: 0 auto;
+	font-size: 1.05rem;
+}

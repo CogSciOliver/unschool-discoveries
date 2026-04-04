@@ -1,0 +1,55 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 1.25rem;
+	margin-top: 1rem;
+	background: var(--bg-panel);
+	border: 1px solid var(--border-soft);
+	border-radius: var(--radius-lg);
+	backdrop-filter: blur(var(--blur-glass));
+	-webkit-backdrop-filter: blur(var(--blur-glass));
+	box-shadow: var(--shadow-soft);
+}
+
+.logo {
+	display: block;
+	width: 133px;
+	height: 55px;
+	background-image: url("https://unschooldiscoveries.com/images/unschool-discoveries-B-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	flex: 0 0 auto;
+}
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	align-items: center;
+}
+
+.nav a {
+	text-decoration: none;
+	color: var(--text-main);
+	font-weight: 600;
+	position: relative;
+}
+
+.nav a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 0;
+	height: 2px;
+	background: var(--accent-lilac);
+	transition: width 0.25s ease;
+}
+
+.nav a:hover::after {
+	width: 100%;
+}

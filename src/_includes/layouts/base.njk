@@ -8,32 +8,62 @@
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">{{ site.title }}</a>
+  <div class="site-shell">
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-sidebar"
+      aria-label="Open navigation"
+      data-nav-toggle
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <nav class="site-nav">
-        {% for item in nav %}
-          <a
-            href="{{ item.url }}"
-            {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
-          >
-            {{ item.title }}
-          </a>
-        {% endfor %}
-      </nav>
+    <div class="mobile-topbar">
+      <a class="mobile-brand" href="/">{{ site.title }}</a>
     </div>
-  </header>
 
-  <main class="wrap">
-    {{ content | safe }}
-  </main>
+    <aside class="site-sidebar" id="site-sidebar" data-sidebar>
+      <div class="sidebar-inner">
+        <a class="brand" href="/">{{ site.title }}</a>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>{{ site.title }} — {{ site.tagline }}</p>
-      <p><a href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a></p>
+        <nav class="site-nav">
+          {% for item in nav %}
+            <a
+              href="{{ item.url }}"
+              {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+            >
+              {{ item.title }}
+            </a>
+          {% endfor %}
+        </nav>
+
+        <div class="sidebar-note">
+          <p>{{ site.tagline }}</p>
+          <a class="sidebar-link" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+        </div>
+      </div>
+    </aside>
+
+    <button class="site-overlay" type="button" aria-label="Close navigation" data-overlay></button>
+
+    <div class="site-main">
+      <main class="wrap">
+        {{ content | safe }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <p>{{ site.title }} — {{ site.tagline }}</p>
+          <p><a href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a></p>
+        </div>
+      </footer>
     </div>
-  </footer>
+  </div>
+
+  <script src="/assets/js/site.js"></script>
 </body>
 </html>

@@ -1,23 +1,25 @@
 .site-footer {
-  margin-top: 4rem;
-  padding: 2rem 0 3rem;
-  border-top: 1px solid rgba(255,255,255,0.35);
+  padding: 0 0 var(--page-pad-y);
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  background: rgba(255,255,255,0.7);
+  box-shadow: var(--shadow-soft);
 }
 
-.site-footer p,
-.site-footer a {
-  color: var(--text-soft);
-  font-size: 1.05rem;
-  text-decoration: none;
+.footer-inner p {
+  margin: 0;
+  color: var(--color-ink-faint);
 }
 
-.site-footer a:hover {
-  text-decoration: underline;
+.footer-inner a {
+  color: var(--color-lilac-5);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
 }

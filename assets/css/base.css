@@ -11,12 +11,14 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: var(--font-body);
-  line-height: 1.6;
-  color: var(--text-main);
-  background: var(--bg-page);
-  position: relative;
+  line-height: 1.65;
+  color: var(--color-ink);
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.85), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(242,234,255,0.6), transparent 26%),
+    var(--surface-page);
 }
 
 body::before {
@@ -27,8 +29,9 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.42;
+  opacity: 0.28;
   z-index: -2;
+  pointer-events: none;
 }
 
 body::after {
@@ -36,16 +39,18 @@ body::after {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(rgba(255,255,255,0.10), rgba(255,255,255,0.24)),
-    radial-gradient(circle at top left, rgba(255,255,255,0.55), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(180, 212, 255, 0.18), transparent 28%);
+    linear-gradient(rgba(255,255,255,0.24), rgba(255,255,255,0.34)),
+    radial-gradient(circle at 15% 10%, rgba(255,255,255,0.52), transparent 20%),
+    radial-gradient(circle at 85% 75%, rgba(223,208,255,0.30), transparent 18%);
   z-index: -1;
+  pointer-events: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: var(--radius-md);
 }
 
 a {
@@ -56,10 +61,46 @@ h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 1.06;
+  line-height: 1.08;
   letter-spacing: -0.02em;
+  color: var(--color-ink);
 }
 
-p {
-  margin: 0;
+p,
+li {
+  color: var(--color-ink-soft);
+}
+
+strong {
+  color: var(--color-ink);
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+::selection {
+  background: rgba(184, 140, 255, 0.28);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  background: rgba(255,255,255,0.6);
+  color: var(--color-lilac-5);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: clamp(1.02rem, 1.5vw, 1.16rem);
+  max-width: 62ch;
 }

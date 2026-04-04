@@ -1,0 +1,323 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1.6;
+	color: #1a1a1a;
+	background: #fff;
+}
+body {
+	position: relative; /* needed for the pseudo-element */
+	margin: 0; /* reset default margin */
+	min-height: 100vh; /* ensure it fills the screen */
+	font-family: sans-serif; /* optional */
+	overflow-x: hidden; /* prevent horizontal scroll if needed */
+}
+
+body::before {
+	content: "";
+	position: fixed; /* covers the viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://unschooldiscoveries.com/images/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.6; /* set desired opacity */
+	z-index: -1; /* send behind content */
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	padding: 6rem;
+}
+
+.center {
+	text-align: center;
+}
+
+/* HEADER */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.nav a {
+	margin-left: 2rem;
+	text-decoration: none;
+	color: #333;
+	position: relative;
+}
+
+.nav a::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: #2b7cff;
+	left: 0;
+	bottom: -4px;
+	transition: 0.3s;
+}
+
+.nav a:hover::after {
+	width: 100%;
+}
+
+/* HERO */
+.hero {
+	background: linear-gradient(135deg, #2b7cff, #7c3cff);
+	color: white;
+	text-align: center;
+	padding: 6rem 0;
+}
+
+.hero h1 {
+	font-size: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+/* BOOK SECTION */
+.book-section {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: auto;
+	padding: 7rem;
+}
+.book-image {
+	margin: auto;
+	padding: 4rem;
+}
+
+.book-image img {
+	max-width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.book-text h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* ALT SECTIONS */
+.section-w-fade {
+	background: rgba(205, 218, 254, 0.45);
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.section-white {
+	background: rgba(232, 237, 251, 0.75);
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.section-b-fade {
+	background: rgba(112, 149, 246, 0.75);
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.section-blue {
+	background: rgba(18, 77, 240, 0.75);
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.section-gradient {
+	background: linear-gradient(135deg, #2b7cff, #7c3cff);
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.section-transparent {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+
+/* ------------------ */
+/* ----- BUTTONS----- */
+/* ------------------ */
+
+/* BUTTONS */
+.btn {
+	display: inline-block;
+	margin-top: 1.5rem;
+	padding: 0.8rem 1.8rem;
+	background: linear-gradient(135deg, #2b7cff, #7c3cff);
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 26px;
+	transition: 0.3s ease;
+	cursor: pointer;
+	transition:
+		background-color 0.2s,
+		transform 0.2s;
+}
+
+.btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-light {
+	background: white;
+	color: #2b7cff;
+}
+/* ---ORDER BUTTON--- */
+.order-button {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 !important;
+}
+
+.order-button:hover {
+	background-color: #357abd; /* darker on hover */
+	transform: translateY(-2px);
+}
+
+.order-button:active {
+	transform: translateY(0);
+}
+
+/* FEATURES */
+.features {
+	display: flex;
+	gap: 2rem;
+	margin-top: 3rem;
+	justify-content: center;
+}
+
+.feature-card {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	transition: 0.3s;
+	max-width: 300px;
+}
+
+.feature-card:hover {
+	transform: translateY(-6px);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+	display: flex;
+	gap: 2rem;
+	margin-top: 2rem;
+	justify-content: center;
+}
+
+.testimonial-card {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	max-width: 350px;
+}
+
+.testimonial-card span {
+	display: block;
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
+/* CTA */
+.cta {
+	background: linear-gradient(135deg, #7c3cff, #2b7cff);
+	color: white;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+/* FOOTER */
+.site-footer {
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 0.9rem;
+	border-top: 1px solid #eee;
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+	animation: fadeUp 1s ease forwards;
+	opacity: 0;
+}
+
+@keyframes fadeUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+	.book-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.features,
+	.testimonials {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.two-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+
+@media (max-width: 900px) {
+	.two-col {
+		grid-template-columns: 1fr;
+	}
+}
+
+.logo {
+	display: block;
+	width: 133px;
+	height: 55px;
+	background-image: url("https://unschooldiscoveries.com/images/unschool-discoveries-B-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
