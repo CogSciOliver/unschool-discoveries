@@ -1,0 +1,107 @@
+.media-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.media-subnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.65rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-soft);
+  color: var(--color-lilac-5);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.media-subnav a:hover {
+  transform: translateY(-2px);
+}
+
+.press-release-grid {
+  align-items: stretch;
+}
+
+.press-release-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--color-lilac-5);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.press-release-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.card-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.press-release-meta {
+  margin-bottom: 1rem;
+}
+
+.press-release-rule {
+  margin: 2rem 0 1.5rem;
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+/* Carosel Images  */
+.asset-strip {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.75rem;
+  scroll-snap-type: x proximity;
+}
+
+.asset-strip a {
+  flex: 0 0 auto;
+  display: block;
+  text-decoration: none;
+}
+
+.asset-strip img {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow-soft);
+  scroll-snap-align: start;
+
+  object-fit: contain;
+  
+}
+
+.asset-strip a:hover img {
+  transform: translateY(-2px);
+}
+
+.asset-strip img {
+  transition: transform 0.18s ease;
+}
+

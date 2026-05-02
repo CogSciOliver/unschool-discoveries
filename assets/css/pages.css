@@ -1,6 +1,6 @@
 .page-hero {
   background:
-    radial-gradient(circle at top right, rgba(184,140,255,0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(184, 140, 255, 0.16), transparent 28%),
     var(--surface-highlight);
 }
 
@@ -15,11 +15,11 @@
 
 .page-body {
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.86)),
-    rgba(255,255,255,0.72);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.86)),
+    rgba(255, 255, 255, 0.72);
 }
 
-.page-body > * + * {
+.page-body>*+* {
   margin-top: 1rem;
 }
 
@@ -41,11 +41,11 @@
   width: 100%;
   height: 0.25rem;
   border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, rgba(184,140,255,0.4), rgba(136,178,255,0.16), transparent);
+  background: linear-gradient(90deg, rgba(184, 140, 255, 0.4), rgba(136, 178, 255, 0.16), transparent);
 }
 
-.page-body p + ul,
-.page-body p + ol {
+.page-body p+ul,
+.page-body p+ol {
   margin-top: 0.75rem;
 }
 

@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero">
+  <p class="eyebrow">Media</p>
+  <h1>{{ title }}</h1>
+  {% if intro %}
+    <p class="lead">{{ intro }}</p>
+  {% endif %}
+</section>
+
+<section class="panel">
+  <nav class="media-subnav" aria-label="Media pages">
+    <a href="/media/media-mentions/">Media Mentions</a>
+    <a href="/media/press-releases/">Press Releases</a>
+    <a href="/media/cover-images/">Cover Images</a>
+    <a href="/media/author-bio/">Author Bio</a>
+    <a href="/media/interview-topics/">Interview Topics</a>
+  </nav>
+
+  <div class="grid three press-release-grid">
+    {% for release in collections.pressRelease | reverse %}
+      <article class="card press-release-card">
+        <p class="card-kicker">
+          {{ release.data.release_date or release.date | date("MMMM d, yyyy") }}
+        </p>
+
+        <h2>
+          <a class="card-link" href="{{ release.url }}">{{ release.data.title }}</a>
+        </h2>
+
+        {% if release.data.summary %}
+          <p>{{ release.data.summary }}</p>
+        {% endif %}
+
+        <div class="card-actions">
+          <a class="button" href="{{ release.url }}">Read Full Release</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

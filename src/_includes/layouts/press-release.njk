@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero">
+  <p class="eyebrow">Press Release</p>
+  <h1>{{ title }}</h1>
+  {% if intro %}
+    <p class="lead">{{ intro }}</p>
+  {% endif %}
+</section>
+
+<section class="page-body">
+  <p class="press-release-meta">
+    <strong>{{ release_date or page.date | date("MMMM d, yyyy") }}</strong>
+  </p>
+
+  {{ content | safe }}
+
+  <hr class="press-release-rule">
+
+  <p>
+    <a class="button button-secondary" href="/media/press-releases/">Back to Press Releases</a>
+  </p>
+</section>
