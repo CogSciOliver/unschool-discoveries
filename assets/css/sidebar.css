@@ -3,7 +3,7 @@
   inset: 0 auto 0 0;
   width: var(--sidebar-width);
   padding: 1rem;
-  z-index: 40;
+  z-index: 1000;
 }
 
 .sidebar-inner {
@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 1.25rem;
   padding: 1.25rem;
-  border-radius: calc(var(--radius-lg) + 0.2rem);
+  border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(242, 234, 255, 0.74)),
@@ -35,6 +35,18 @@
   font-size: clamp(1rem, 1vw, 1.7rem);
   padding: 0.4rem 0.2rem 0.85rem;
   border-bottom: 1px solid rgba(167, 124, 255, 0.14);
+}
+
+.logo {
+	display: block;
+	width: auto;
+	height: 75px;
+	background-image: url("https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	flex: 0 0 auto;
 }
 
 .site-nav {

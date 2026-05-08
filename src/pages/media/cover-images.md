@@ -23,8 +23,8 @@ This page holds the official visual assets for **Unschool Discoveries**. These m
     <img src="https://mri.unschooldiscoveries.com/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png" alt="Book cover for Unschool Discoveries">
   </a>
 
-  <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png" target="_blank" rel="noopener noreferrer">
-    <img class="asset-contain" src="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png" alt="Unschool Discoveries logo">
+  <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif" target="_blank" rel="noopener noreferrer">
+    <img class="asset-contain" src="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif" alt="Unschool Discoveries logo">
   </a>
 
   <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-ebook-reading-on-couch.png" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ Official cover images for **Unschool Discoveries: Venturing into the Unknown**.
 
 Official **Unschool Discoveries** brand visuals.
 
-- [Primary Logo PNG](https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png)
+- [Primary Logo PNG](https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif)
 - [Ebook](https://mri.unschooldiscoveries.com/unschool-discoveries-ebook-reading-on-couch.png)
 
 ## Image Use Guidelines

@@ -13,17 +13,7 @@
 	box-shadow: var(--shadow-soft);
 }
 
-.logo {
-	display: block;
-	width: 133px;
-	height: 55px;
-	background-image: url("https://unschooldiscoveries.com/images/unschool-discoveries-B-logo.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-	flex: 0 0 auto;
-}
+
 
 .nav {
 	display: flex;

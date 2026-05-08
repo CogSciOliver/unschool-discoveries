@@ -58,6 +58,14 @@ body::before {
 .logo {
 	font-weight: 700;
 	font-size: 1.2rem;
+	display: block;
+	width: 133px;
+	height: 55px;
+	background-image: url("https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 }
 
 .nav a {
@@ -311,13 +319,4 @@ body::before {
 	}
 }
 
-.logo {
-	display: block;
-	width: 133px;
-	height: 55px;
-	background-image: url("https://unschooldiscoveries.com/images/unschool-discoveries-B-logo.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-}
+
