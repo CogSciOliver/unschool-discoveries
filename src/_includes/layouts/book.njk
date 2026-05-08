@@ -22,8 +22,8 @@ layout: layouts/base.njk
       <p><strong>Formats:</strong> {{ book.formats | join(", ") }}</p>
       {{ content | safe }}
       <div class="actions">
-        <a class="button" href="/newsletter/">Get Updates</a>
-        <a class="button button-secondary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+        <a class="button" href="{{ book.orderUrl }}">Order Your Copy</a>
+        <a class="button button-secondary" href="/media/press-releases/">Get Updates</a>
       </div>
     </div>
   </div>

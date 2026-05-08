@@ -15,10 +15,8 @@
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(242, 234, 255, 0.74)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 50%, var(--color-blue-1) 100%),
     var(--gradient-brand-soft);
-  backdrop-filter: blur(calc(var(--blur-glass) + 2px));
-  -webkit-backdrop-filter: blur(calc(var(--blur-glass) + 2px));
   box-shadow: var(--shadow-card);
 }
 
@@ -90,7 +88,7 @@
 }
 
 .sidebar-link {
-  color: var(--color-lilac-5);
+  color: var(--color-brand-blue);
   font-weight: 700;
   text-decoration-thickness: 2px;
 }

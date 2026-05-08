@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-.site-main > .wrap {
+.site-main>.wrap {
   flex: 1;
   padding-top: var(--page-pad-y);
   padding-bottom: var(--page-pad-y);
@@ -33,6 +33,7 @@
 .grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 .grid.four {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -46,13 +47,10 @@
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-soft);
   background: var(--surface-glass);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(var(--blur-glass));
-  -webkit-backdrop-filter: blur(var(--blur-glass));
   overflow: hidden;
 }
 
-.panel > *:last-child,
-.page-body > *:last-child {
+.panel>*:last-child,
+.page-body>*:last-child {
   margin-bottom: 0;
 }

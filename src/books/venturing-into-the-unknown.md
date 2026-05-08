@@ -8,15 +8,7 @@ description: Explore the first Unschool Discoveries story.
 
 ## About this book
 
-A flagship entry into the Unschool Discoveries universe.
+Discover what unschooling can look like day to day. Read along, gain ideas, enter the world Danielle and David enhabit. 
 
-## What readers will find
 
-- story
-- curiosity
-- exploration
-- a gateway into the larger world
-
-## Next steps
-
-Follow the world further through Unschool Pages and future releases.
+Follow the world of other unschooled characters further through Unschool Pages and future releases in the series.

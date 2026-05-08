@@ -18,18 +18,24 @@
   --color-ink-faint: #7f82af;
   --color-white: #ffffff;
 
+   /* main brand vibrants */
+  --color-brand-blue: #2b7cff; /* rgb(43, 124, 255) */
+  --color-brand-purple: #7c3cff; /* rgb(124, 60, 255) */
+
+  /* supporting tints */
+  --color-blue-1: #eaf4ff;
+  --color-blue-2: #c8deff;
+  --color-blue-3: #88b2ff;
+
   --color-lilac-1: #f2eaff;
   --color-lilac-2: #dfd0ff;
   --color-lilac-3: #c3a7ff;
   --color-lilac-4: #a77cff;
   --color-lilac-5: #7b56db;
 
-  --color-blue-1: #eaf4ff;
-  --color-blue-2: #c8deff;
-  --color-blue-3: #8db6ff;
-
   --color-pink-1: #ffe6f5;
   --color-pink-2: #f6b6df;
+
 
   --surface-page: #faf7ff;
   --surface-glass: rgba(255, 255, 255, 0.68);
@@ -42,12 +48,12 @@
   --border-soft: rgba(167, 124, 255, 0.18);
   --border-strong: rgba(167, 124, 255, 0.32);
 
-  --gradient-brand: linear-gradient(135deg, #88b2ff 0%, #b88cff 52%, #f6b6df 100%);
+  --gradient-brand: linear-gradient(135deg, #2b7cff 0%, #7c3cff 100%);
   --gradient-brand-soft: linear-gradient(135deg, rgba(136,178,255,0.18) 0%, rgba(184,140,255,0.24) 52%, rgba(246,182,223,0.18) 100%);
   --gradient-lilac-rim: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(223,208,255,0.65));
 
-  --shadow-soft: 0 0.75rem 2rem rgba(109, 92, 173, 0.10);
-  --shadow-card: 0 1.2rem 2.8rem rgba(109, 92, 173, 0.14);
+  --shadow-soft: 0 0.5rem 1rem rgba(109, 92, 173, 0.10);
+  --shadow-card: 0 0.5rem 2.8rem rgba(109, 92, 173, 0.14);
   --shadow-button: 0 0.9rem 1.8rem rgba(167, 124, 255, 0.28);
 
   --blur-glass: 18px;

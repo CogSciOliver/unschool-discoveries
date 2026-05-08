@@ -3,10 +3,10 @@ layout: layouts/base.njk
 ---
 
 <section class="page-hero">
-  <p class="eyebrow">Media</p>
+  <p class="eyebrow">News & Updates</p>
   <h1>{{ title }}</h1>
   {% if intro %}
-    <p class="lead">{{ intro }}</p>
+  <p class="lead">{{ intro }}</p>
   {% endif %}
 </section>
 
@@ -21,23 +21,23 @@ layout: layouts/base.njk
 
   <div class="grid three press-release-grid">
     {% for release in collections.pressRelease | reverse %}
-      <article class="card press-release-card">
-        <p class="card-kicker">
-          {{ release.data.release_date or release.date | date("MMMM d, yyyy") }}
-        </p>
+    <article class="card press-release-card">
+      <p class="card-kicker">
+        {{ release.data.release_date or release.date | date("MMMM d, yyyy") }}
+      </p>
 
-        <h2>
-          <a class="card-link" href="{{ release.url }}">{{ release.data.title }}</a>
-        </h2>
+      <h2>
+        <a class="card-link" href="{{ release.url }}">{{ release.data.title }}</a>
+      </h2>
 
-        {% if release.data.summary %}
-          <p>{{ release.data.summary }}</p>
-        {% endif %}
+      {% if release.data.summary %}
+      <p>{{ release.data.summary }}</p>
+      {% endif %}
 
-        <div class="card-actions">
-          <a class="button" href="{{ release.url }}">Read Full Release</a>
-        </div>
-      </article>
+      <div class="card-actions">
+        <a class="button button-minimal" href="{{ release.url }}">Read Full Release</a>
+      </div>
+    </article>
     {% endfor %}
   </div>
 </section>

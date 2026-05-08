@@ -10,30 +10,38 @@
     var(--gradient-brand-soft);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+  background: var(--gradient-brand);
 }
+
 
 .hero::before {
   content: "";
   position: absolute;
-  top: -8%;
-  right: -4%;
-  width: 18rem;
-  height: 18rem;
+  top: -10rem;
+  left: 36rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(184,140,255,0.24), transparent 60%);
+  background: radial-gradient(circle, rgba(126, 229, 190, 0.7), transparent 50%);
   pointer-events: none;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  left: -3rem;
-  bottom: -4rem;
-  width: 14rem;
-  height: 14rem;
+  left: -28%;
+  bottom: -15rem;
+  width: 32rem;
+  height: 32rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(136,178,255,0.18), transparent 62%);
+  background: radial-gradient(circle, rgba(254, 223, 203, 0.9), transparent 52%);
   pointer-events: none;
+}
+
+.hero .eyebrow {
+  color: var(--color-white);
+  background: none;
+  border: 1px solid var(--surface-glass);
 }
 
 .hero h1 {
@@ -41,6 +49,14 @@
   z-index: 1;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   max-width: 12ch;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero a {
+  color: var(--color-white);
 }
 
 .hero .lead {
