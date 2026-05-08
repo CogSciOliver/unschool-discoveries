@@ -33,6 +33,9 @@
 .grid.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
 .panel,
 .page-hero,
@@ -47,16 +50,6 @@
   backdrop-filter: blur(var(--blur-glass));
   -webkit-backdrop-filter: blur(var(--blur-glass));
   overflow: hidden;
-}
-
-.panel::before,
-.page-hero::before,
-.page-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.18), transparent 32%);
-  pointer-events: none;
 }
 
 .panel > *:last-child,

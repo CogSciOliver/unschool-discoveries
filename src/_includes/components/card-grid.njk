@@ -1,0 +1,69 @@
+{# Card Grid Macro No Wrap Panel Add in Panel if needed #}
+{% macro cardGrid(items=[], columns="three") %}
+<div class="grid {{ columns }} content-card-grid">
+    {% for item in items %}<article class="card content-card">
+        {% if item.image %}
+        <img
+            class="content-card-image{% if item.image_contain %} content-card-image-contain{% endif %}"
+            src="{{ item.image }}"
+            alt="{{ item.image_alt or item.title }}">
+        {% endif %}
+        <div class="content-card-body">
+            {% if item.eyebrow %}
+            <p class="eyebrow">{{ item.eyebrow }}</p>
+            {% endif %}
+            <h3>{{ item.title }}</h3>
+            {% if item.text %}
+            <p>{{ item.text }}</p>
+            {% endif %}
+        </div>
+        {% if item.href and item.button_label %}
+        <div class="content-card-actions">
+            <a
+                class="button"
+                href="{{ item.href }}"
+                {% if item.external %}target="_blank" rel="noopener noreferrer" {% endif %}>
+                {{ item.button_label }}
+            </a>
+        </div>
+        {% endif %}
+    </article>{% endfor %}</div>
+{% endmacro %}
+
+{# ----------- SET ITEMS LIST Then Display elsewhere ----------- #}
+{#
+{% from "components/card-grid.njk" import cardGrid %}
+{% set items = [
+{
+"title": "",
+"text": "",
+"image": "",
+"image_alt": "",
+"href": "",
+"button_label": "",
+"external": true
+},
+{}
+] %}
+{{ cardGrid(items, "three") }}
+#}
+
+{# ----------- DISPLAY ITEMS Directly ----------- #}
+{#
+{% from "components/card-grid.njk" import cardGrid %}
+{{ cardGrid(
+items=[
+{
+"title": "",
+"text": "",
+"eyebrow": "", or false
+"image": "",
+"image_alt": "",
+"href": "",
+"button_label": "",
+"external": true
+},
+{}
+]
+) }}
+#}

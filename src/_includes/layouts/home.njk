@@ -33,34 +33,78 @@ layout: layouts/base.njk
 </section>
 {% endif %}
 
+
+{% from "components/card-grid.njk" import cardGrid %}
+{% set items = [
+{
+"title": "New here?",
+"text": "Get oriented fast.",
+"image": "https://mri.unschooldiscoveries.com/explore.png",
+"image_alt": "Explore the story world",
+"href": "/start-here/",
+"button_label": "Start Here",
+"external": false
+},
+{
+"title": "Investigate the Story World",
+"text": "Follow clues, themes, and reader trails.",
+"eyebrow": false,
+"image": "https://mri.unschooldiscoveries.com/investigate.png",
+"image_alt": "Investigate the story world",
+"href": "/investigate/",
+"button_label": "Investigate",
+"external": false
+},
+{
+"title": "Media",
+"text": "Press info, images, and releases.",
+"eyebrow": false,
+"image": "https://mri.unschooldiscoveries.com/publish.png",
+"image_alt": "Media resources",
+"href": "/media/",
+"button_label": "View Media",
+"external": false
+},
+{
+"title": "Purchase the Book",
+"text": "Get your copy today.",
+"eyebrow": false,
+"image": "https://mri.unschooldiscoveries.com/research.png",
+"image_alt": "Unschool Discoveries book",
+"href":site.amazonBundleUrl,
+"button_label": "Order Now",
+"external": true
+}
+] %}
+
 <section class="panel">
   <h2>Choose your path</h2>
-  <div class="grid three">
-    <a class="card" href="/start-here/">
-      <h3>New here?</h3>
-      <p>Get oriented fast.</p>
-    </a>
-
-    <a class="card" href="/investigate/">
-      <h3>Investigate</h3>
-      <p>Follow clues, themes, and reader trails.</p>
-    </a>
-
-    <a class="card" href="/media/">
-      <h3>Media</h3>
-      <p>Press info, images, and releases.</p>
-    </a>
-  </div>
+  {{ cardGrid(items, "four") }}
 </section>
 
-<section class="panel">
-  <h2>Continue on Unschool Pages</h2>
-  <p>The living notebook, rabbit holes, and behind-the-scenes publication platform.</p>
-  <a class="button" href="{{ site.unschoolPagesUrl }}">Go to Unschool Pages</a>
-</section>
 
-<section class="panel">
-  <h2>Stay in the loop</h2>
-  <p>Get book news, release updates, and new discoveries.</p>
-  <a class="button" href="/newsletter/">Join the Newsletter</a>
-</section>
+{% from "components/single-panel.njk" import singlePanel %}
+{{ singlePanel(
+title="Continue on Unschool Pages",
+text="The living notebook, rabbit holes, and behind-the-scenes publication platform.",
+href="{{ site.unschoolPagesUrl }}",
+button_label="Go to Unschool Pages",
+external=true
+) }}
+
+{% from "components/single-panel.njk" import singlePanel %}
+{{ singlePanel(
+title="Explore the Book",
+text="Discover the book's themes, clues, and connections.",
+href="/books/venturing-into-the-unknown/",
+button_label="View Book"
+) }}
+
+{% from "components/single-panel.njk" import singlePanel %}
+{{ singlePanel(
+title="Stay in the loop",
+text="Get book news, release updates, and new discoveries.",
+href=site.newsletterSignUpUrl,
+button_label="Join the Newsletter",
+external=true
+) }}

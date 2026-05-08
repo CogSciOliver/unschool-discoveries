@@ -1,0 +1,44 @@
+{% macro featurePanel(
+eyebrow="",
+title="",
+subtitle="",
+text="",
+bullets=[],
+image="",
+image_alt="",
+href="",
+button_label="",
+external=false,
+image_contain=false
+) %}
+<section class="panel feature-panel">
+    <div class="grid two feature-panel-grid">
+        <div class="feature-panel-media">
+            {% if image %}<img
+                class="feature-panel-image{% if image_contain %} feature-panel-image-contain{% endif %}"
+                src="{{ image }}"
+                alt="{{ image_alt or title }}">
+            {% endif %}
+        </div>
+        <div class="feature-panel-content">
+            {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+            <h2>{{ title }}</h2>
+            {% if subtitle %}<h3>{{ subtitle }}</h3>{% endif %}
+            {% if text %}<p>{{ text }}</p>{% endif %}
+            {% if bullets %}<ul>
+                {% for bullet in bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>{% endif %}
+            {% if href and button_label %}<p class="feature-panel-actions">
+                <a
+                    class="button"
+                    href="{{ href }}"
+                    {% if external %}target="_blank" rel="noopener noreferrer" {% endif %}>
+                    {{ button_label }}
+                </a>
+            </p>{% endif %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

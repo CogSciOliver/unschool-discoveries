@@ -11,7 +11,7 @@ Unschool Discoveries is the story-world front door.
 
 ## Where to go next
 
-- [Read the featured book](/books/venturing-into-the-unknown/)
-- [Investigate the world](/investigate/)
-- [Continue on Unschool Pages]({{ site.unschoolPagesUrl }})
+- [Purchase a copy of the book]({{ site.amazonBundleUrl }})
+- [Explore what Unschooling is like]({{ site.unschoolPagesUrl }})
+- [Visit the Unschool Pages Universe]({{ site.unschoolPagesUrl }})
 - [Join the newsletter](/newsletter/)

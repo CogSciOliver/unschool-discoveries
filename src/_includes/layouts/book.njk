@@ -16,6 +16,9 @@ layout: layouts/base.njk
       <img src="{{ book.cover }}" alt="{{ book.title }} cover">
     </div>
     <div>
+      {% if book.eyebrow %}
+      <p class="eyebrow">{{ book.eyebrow }}</p>
+      {% endif %}
       <p><strong>Formats:</strong> {{ book.formats | join(", ") }}</p>
       {{ content | safe }}
       <div class="actions">

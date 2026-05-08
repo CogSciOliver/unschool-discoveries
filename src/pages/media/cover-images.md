@@ -11,41 +11,41 @@ This page holds the official visual assets for **Unschool Discoveries**. These m
 
 ## Available Assets
 <div class="asset-strip">
-  <a href="/assets/images/unschool-discoveries-book-Cover-sq.png" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/images/unschool-discoveries-book-Cover-sq.png" alt="Square cover for Unschool Discoveries">
+  <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-book-Cover-sq.png" target="_blank" rel="noopener noreferrer">
+    <img src="https://mri.unschooldiscoveries.com/unschool-discoveries-book-Cover-sq.png" alt="Square cover for Unschool Discoveries">
   </a>
 
-  <a href="/assets/images/cover.jpg" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/images/cover.jpg" alt="Web cover for Unschool Discoveries">
+  <a href="https://mri.unschooldiscoveries.com/cover.jpg" target="_blank" rel="noopener noreferrer">
+    <img src="https://mri.unschooldiscoveries.com/cover.jpg" alt="Web cover for Unschool Discoveries">
   </a>
 
-  <a href="/assets/images/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/images/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png" alt="Book cover for Unschool Discoveries">
+  <a href="https://mri.unschooldiscoveries.com/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png" target="_blank" rel="noopener noreferrer">
+    <img src="https://mri.unschooldiscoveries.com/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png" alt="Book cover for Unschool Discoveries">
   </a>
 
-  <a href="/assets/images/unschool-discoveries-B-logo.png" target="_blank" rel="noopener noreferrer">
-    <img class="asset-contain" src="/assets/images/unschool-discoveries-B-logo.png" alt="Unschool Discoveries logo">
+  <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png" target="_blank" rel="noopener noreferrer">
+    <img class="asset-contain" src="https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png" alt="Unschool Discoveries logo">
   </a>
 
-  <a href="/assets/images/unschool-discoveries-ebook-reading-on-couch.png" target="_blank" rel="noopener noreferrer">
-    <img class="asset-contain" src="/assets/images/unschool-discoveries-ebook-reading-on-couch.png" alt="Unschool Discoveries Ebook">
+  <a href="https://mri.unschooldiscoveries.com/unschool-discoveries-ebook-reading-on-couch.png" target="_blank" rel="noopener noreferrer">
+    <img class="asset-contain" src="https://mri.unschooldiscoveries.com/unschool-discoveries-ebook-reading-on-couch.png" alt="Unschool Discoveries Ebook">
 </div>
 
 ### Book Cover Images
 
 Official cover images for **Unschool Discoveries: Venturing into the Unknown**.
 
-- [Square Cover PNG](/assets/images/unschool-discoveries-book-Cover-sq.png)
-- [Web Cover JPG](/assets/images/cover.jpg)
-- [Print Cover PNG](/assets/images/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png)
+- [Square Cover PNG](https://mri.unschooldiscoveries.com/unschool-discoveries-book-Cover-sq.png)
+- [Web Cover JPG](https://mri.unschooldiscoveries.com/cover.jpg)
+- [Print Cover PNG](https://mri.unschooldiscoveries.com/VITU-Square-Childrens-Book-Mockup-COVERVAULT.png)
 
 
 ### Brand Images
 
 Official **Unschool Discoveries** brand visuals.
 
-- [Primary Logo PNG](/assets/images/unschool-discoveries-B-logo.png)
-- [Ebook](/assets/images/unschool-discoveries-ebook-reading-on-couch.png)
+- [Primary Logo PNG](https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.png)
+- [Ebook](https://mri.unschooldiscoveries.com/unschool-discoveries-ebook-reading-on-couch.png)
 
 ## Image Use Guidelines
 

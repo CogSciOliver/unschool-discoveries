@@ -11,21 +11,10 @@
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  width: 2.5rem;
-  height: 0.5rem;
-  border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, rgba(184,140,255,0.24), rgba(136,178,255,0.2));
-}
-
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card);
-  border-color: rgba(167,124,255,0.28);
+  border-color: rgba(167, 124, 255, 0.28);
 }
 
 .card h3 {
@@ -40,6 +29,104 @@
   margin-bottom: 0.8rem;
 }
 
-.panel > p {
+.panel>p {
   margin-top: 0;
+}
+
+/* ---------------------- */
+/*   3 column grid   */
+/* ---------------------- */
+.content-card-grid {
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.content-card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-soft);
+}
+
+.content-card-image-contain {
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.content-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.content-card-body h3,
+.content-card-body p {
+  margin: 0;
+}
+
+.content-card-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.content-card-actions .button {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ---------------------- */
+/* 2 column Feature Panel */
+/* ---------------------- */
+.feature-panel-grid {
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature-panel-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-panel-image {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.feature-panel-image-contain {
+  object-fit: contain;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.feature-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-panel-content h2,
+.feature-panel-content h3,
+.feature-panel-content p,
+.feature-panel-content ul {
+  margin: 0;
+}
+
+.feature-panel-actions {
+  padding-top: 0.5rem;
 }

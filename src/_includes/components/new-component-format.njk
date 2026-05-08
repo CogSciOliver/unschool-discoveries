@@ -1,0 +1,19 @@
+{% macro nameComponent(
+componentDataText="",
+componentDataContent="",
+componentDataHref="",
+componentDataLabel="",
+componentData=false
+) %}
+<HTML class="STYLED_COMPONENT">
+    {# insert any HTML content here to layout and style the component with a .css file #}
+    <h2>{{ componentDataText }}</h2>
+    <p>{{ componentDataContent }}</p>
+    {% if componentData and componentDataLabel %}<a
+        class="button"
+        href="{{ componentDataHref }}"
+        {% if external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+        {{ componentDataLabel }}
+    </a>{% endif %}
+</HTML>
+{% endmacro %}

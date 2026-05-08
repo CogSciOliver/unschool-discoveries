@@ -17,7 +17,7 @@
     padding: 0.6rem 4rem 0.6rem 1rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-strong);
-    background: rgba(255,255,255,0.78);
+    background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(var(--blur-glass));
     -webkit-backdrop-filter: blur(var(--blur-glass));
     box-shadow: var(--shadow-soft);
@@ -99,8 +99,11 @@
 
   .grid.two,
   .grid.three,
+  .grid.four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-inner {
-    grid-template-columns: 1fr;
     flex-direction: column;
   }
 
@@ -113,6 +116,7 @@
 }
 
 @media (max-width: 720px) {
+
   .hero h1,
   .page-hero h1 {
     max-width: none;
@@ -125,5 +129,15 @@
 
   .button {
     width: 100%;
+  }
+
+  .grid.two,
+  .grid.three,
+  .grid.four {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
   }
 }

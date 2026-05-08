@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
-title: Investigate
-permalink: /investigate/
+title: Podcast
+permalink: /podcast/
 intro: Follow clues, themes, and deeper trails from the world of Unschool Discoveries.
 ---
 
