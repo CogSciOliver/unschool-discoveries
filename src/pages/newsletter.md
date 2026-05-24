@@ -11,4 +11,10 @@ Sign up here for our offical <a href="{{ site.newsletterSignUpUrl }}" target="_b
 Want yo join the conversation? 
 All you have to do is sign up to participate the [Group Discussion]({{ site.newsletterSignUpUrl }}) here.
 
+## Be the first to know about 
+- Future books
+- Audiobook updates
+- Bonus materials
+- New site sections
+
 <p><a class="button" href="{{ site.newsletterSignUpUrl }}" target="_blank" rel="noopener noreferrer">Community Discussion & Newsletter</a></p>
