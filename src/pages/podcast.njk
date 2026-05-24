@@ -13,54 +13,6 @@ intro: Listen in as we follow clues, stories, questions, and deeper trails from 
   clues, conversations, rabbit holes, and deeper trails connected to the story-world.
 </p>
 
-{% if podcast.length %}
-  <p>
-    <strong>{{ podcast.length }} episodes available.</strong>
-  </p>
-
-  <div class="episode-list">
-    {% for episode in podcast %}
-      <article class="card episode-card">
-        {% if episode.image %}
-          <img
-            class="episode-card__image"
-            src="{{ episode.image }}"
-            alt=""
-            loading="lazy"
-          >
-        {% endif %}
-
-        <div class="episode-card__content">
-          <p class="eyebrow">{{ episode.label }}</p>
-
-          <h3>{{ episode.title }}</h3>
-
-          <p class="episode-meta">
-            {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
-            {% if episode.duration %} · {{ episode.duration }}{% endif %}
-          </p>
-
-          {% if episode.description %}
-            <p>{{ episode.description }}</p>
-          {% endif %}
-
-          <audio controls preload="none">
-            <source
-              src="{{ episode.audioUrl }}"
-              {% if episode.audioType %}type="{{ episode.audioType }}"{% endif %}
-            >
-            Your browser does not support the audio element.
-          </audio>
-
-          
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No podcast episodes found yet.</p>
-{% endif %}
-
 <h2>Go deeper</h2>
 
 <p>
@@ -68,3 +20,51 @@ intro: Listen in as we follow clues, stories, questions, and deeper trails from 
 </p>
 
 <a class="button" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+
+{% if podcast.length %}
+<p>
+  <strong>{{ podcast.length }} episodes available.</strong>
+</p>
+
+<div class="episode-list">
+  {% for episode in podcast %}
+  <article class="card episode-card">
+    <div class="episode-card_left">
+      <p class="eyebrow">Podcast Episode {{ episode.episodeNumber }}</p>
+
+      {% if episode.image %}
+      <img
+        class="episode-card__image"
+        src="{{ episode.image }}"
+        alt=""
+        loading="lazy">
+      {% endif %}
+    </div>
+    <div class="episode-card__content">
+
+      <h3>{{ episode.title }}</h3>
+
+      <p class="episode-meta">
+        {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
+        {% if episode.duration %} · {{ episode.duration }}{% endif %}
+      </p>
+
+      {% if episode.description %}
+      <p>{{ episode.description }}</p>
+      {% endif %}
+
+      <audio controls preload="none">
+        <source
+          src="{{ episode.audioUrl }}"
+          {% if episode.audioType %}type="{{ episode.audioType }}" {% endif %}>
+        Your browser does not support the audio element.
+      </audio>
+
+
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<p>No podcast episodes found yet.</p>
+{% endif %}

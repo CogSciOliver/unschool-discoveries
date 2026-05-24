@@ -68,7 +68,6 @@ module.exports = function () {
   }
 
   const xml = fs.readFileSync(rssPath, "utf8");
-
   return [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)]
     .map((match) => {
       const item = match[1];
@@ -78,22 +77,10 @@ module.exports = function () {
       const link = stripHtml(getTag(item, "link"));
       const pubDate = stripHtml(getTag(item, "pubDate"));
       const duration = stripHtml(getTag(item, "itunes:duration"));
-      const season = stripHtml(getTag(item, "itunes:season"));
-      const episode = stripHtml(getTag(item, "itunes:episode"));
 
       const audioUrl = getAttr(item, "enclosure", "url");
       const audioType = getAttr(item, "enclosure", "type");
       const image = getAttr(item, "itunes:image", "href");
-
-      let label = "Podcast Episode";
-
-      if (season && episode) {
-        label = `Season ${season} · Episode ${episode}`;
-      } else if (episode) {
-        label = `Episode ${episode}`;
-      } else if (season) {
-        label = `Season ${season}`;
-      }
 
       return {
         title,
@@ -102,14 +89,20 @@ module.exports = function () {
         pubDate,
         dateLabel: formatDate(pubDate),
         duration,
-        season,
-        episode,
-        label,
         audioUrl,
         audioType,
         image,
       };
     })
     .filter((episode) => episode.title && episode.pubDate && episode.audioUrl)
-    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+    .map((episode, index, episodes) => {
+      return {
+        ...episode,
+
+        // newest-first display:
+        // newest item becomes highest episode number
+        episodeNumber: episodes.length - index,
+      };
+    });
 };
