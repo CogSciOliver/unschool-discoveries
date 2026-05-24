@@ -1,60 +1,70 @@
 ---
 layout: layouts/page.njk
-title: Investigate
+title: Podcast
 nav_label: Investigate
 permalink: /podcast/
-intro: Listen in as we follow clues, stories, questions, and real-life trails from the world of Unschool Discoveries.
+intro: Listen in as we follow clues, stories, questions, and deeper trails from the world of Unschool Discoveries.
 ---
 
-## The podcast trail
+<h2>Investigate</h2>
 
-**Investigate** is the listening side of *Unschool Discoveries*.
+<p>
+  This is the listening side of <em>Unschool Discoveries</em> — a place for episodes,
+  clues, conversations, rabbit holes, and deeper trails connected to the story-world.
+</p>
 
-This is where we slow down, follow the clues, and talk through the ideas hiding inside the stories — curiosity, family life, nature, creativity, learning, and the strange little questions that turn into bigger discoveries.
+{% if podcast.length %}
+  <p>
+    <strong>{{ podcast.length }} episodes available.</strong>
+  </p>
 
-Each episode is a trail.  
-Some trails begin in the book.  
-Some begin in real life.  
-Some lead straight into the living notebook.
+  <div class="episode-list">
+    {% for episode in podcast %}
+      <article class="card episode-card">
+        {% if episode.image %}
+          <img
+            class="episode-card__image"
+            src="{{ episode.image }}"
+            alt=""
+            loading="lazy"
+          >
+        {% endif %}
 
-<div class="grid three">
-  <div class="card">
-    <h3>Story clues</h3>
-    <p>Follow details, themes, and questions from the Unschool Discoveries books.</p>
+        <div class="episode-card__content">
+          <p class="eyebrow">{{ episode.label }}</p>
+
+          <h3>{{ episode.title }}</h3>
+
+          <p class="episode-meta">
+            {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
+            {% if episode.duration %} · {{ episode.duration }}{% endif %}
+          </p>
+
+          {% if episode.description %}
+            <p>{{ episode.description }}</p>
+          {% endif %}
+
+          <audio controls preload="none">
+            <source
+              src="{{ episode.audioUrl }}"
+              {% if episode.audioType %}type="{{ episode.audioType }}"{% endif %}
+            >
+            Your browser does not support the audio element.
+          </audio>
+
+          
+        </div>
+      </article>
+    {% endfor %}
   </div>
+{% else %}
+  <p>No podcast episodes found yet.</p>
+{% endif %}
 
-  <div class="card">
-    <h3>Real-life learning</h3>
-    <p>Notice how everyday moments turn into discovery, conversation, and connection.</p>
-  </div>
+<h2>Go deeper</h2>
 
-  <div class="card">
-    <h3>Rabbit holes</h3>
-    <p>Go beyond the story into ideas, places, animals, history, language, and more.</p>
-  </div>
-</div>
-
-## What we investigate
-
-The podcast explores the space between the story-world and the real world.
-
-We may talk about:
-
-- clues from the book
-- behind-the-scenes story choices
-- family adventures
-- unschooling moments
-- nature finds
-- creative projects
-- questions children ask
-- discoveries that start small and grow bigger
-
-## Episode notes and deeper trails
-
-Each episode can connect back to a deeper trail on **Unschool Pages**, where notes, links, sketches, references, and behind-the-scenes thoughts can keep growing.
+<p>
+  Episode notes, rabbit holes, sketches, references, and behind-the-scenes trails can continue on Unschool Pages.
+</p>
 
 <a class="button" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
-
-## Coming soon
-
-New episodes are in the works.

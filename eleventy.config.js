@@ -1,6 +1,10 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
 
+  eleventyConfig.addPassthroughCopy({
+  "src/rss.xml": "rss.xml"
+});
+
   return {
     dir: {
       input: "src",

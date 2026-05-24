@@ -85,3 +85,44 @@
 .panel img {
   box-shadow: var(--shadow-card);
 }
+
+.episode-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.episode-card {
+  display: grid;
+  grid-template-columns: minmax(6rem, 9rem) 1fr;
+  gap: 1rem;
+}
+
+.episode-card__image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0;
+}
+
+.episode-card audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.episode-meta {
+  margin-top: -0.25rem;
+  color: var(--color-ink-faint);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .episode-card {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-card__image {
+    max-width: 12rem;
+  }
+}
