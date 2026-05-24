@@ -29,5 +29,5 @@ temp/
 .tmp*/
 .eslintcache
 
-# Optional: uncomment if your local notes should stay private
-# dev-notes/
+#DEV NOTES Directory
+dev-notes/
