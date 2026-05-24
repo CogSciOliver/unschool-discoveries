@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://unschooldiscoveries.com/sitemap.xml
-Disallow: /readme.txt
-Disallow: /holder
-Disallow: /unschooling/style-guide
-Disallow: /unschooling/temp-md
