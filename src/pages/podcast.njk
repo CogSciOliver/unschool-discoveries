@@ -19,6 +19,67 @@ intro: Listen in as we follow clues, stories, questions, and deeper trails from 
     curiosity, family life, nature, creativity, learning, and the strange little questions that turn into bigger discoveries.
   </p>
 
+
+  <section class="panel">
+    <h2>Episode notes and deeper trails</h2>
+
+    <p>
+      Each episode connects back to a deeper trail on (<strong>Unschool Pages</strong>){{site.unschoolPagesUrl}},
+      where notes, references, resources, and behind-the-scenes thoughts keep growing with you input.
+    </p><a class="button button-primary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+
+  </section>
+
+  <h2 id="episodes">Episodes</h2>
+
+  {% if podcast.length %}
+  <p>
+    <strong>{{ podcast.length }} episodes available.</strong>
+  </p>
+
+  <div class="episode-list">
+    {% for episode in podcast %}
+    <article class="card episode-card">
+      <div class="episode-card_left">
+        <p class="eyebrow">Podcast Episode {{ episode.episodeNumber }}</p>
+
+        {% if episode.image %}
+        <img
+          class="episode-card__image"
+          src="{{ episode.image }}"
+          alt=""
+          loading="lazy">
+        {% endif %}
+      </div>
+      <div class="episode-card__content">
+
+        <h3>{{ episode.title }}</h3>
+
+        <p class="episode-meta">
+          {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
+          {% if episode.duration %} · {{ episode.duration }}{% endif %}
+        </p>
+
+        {% if episode.description %}
+        <p>{{ episode.description }}</p>
+        {% endif %}
+
+        <audio controls preload="none">
+          <source
+            src="{{ episode.audioUrl }}"
+            {% if episode.audioType %}type="{{ episode.audioType }}" {% endif %}>
+          Your browser does not support the audio element.
+        </audio>
+
+
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>No podcast episodes found yet.</p>
+  {% endif %}
+
   <p>
     Each episode is a trail. Some trails begin in the book. Some begin in real life.
     Some lead straight into the living notebook.
@@ -29,90 +90,3 @@ intro: Listen in as we follow clues, stories, questions, and deeper trails from 
     <a class="button button-secondary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
   </div>
 </section>
-
-<section class="panel">
-  <h2>What we investigate</h2>
-
-  <p>
-    The podcast explores the space between the story-world and the real world.
-  </p>
-
-  <div class="grid three">
-    <div class="card">
-      <h3>Story clues</h3>
-      <p>Follow details, themes, and questions from the Unschool Discoveries books.</p>
-    </div>
-
-    <div class="card">
-      <h3>Real-life learning</h3>
-      <p>Notice how everyday moments turn into discovery, conversation, and connection.</p>
-    </div>
-
-    <div class="card">
-      <h3>Rabbit holes</h3>
-      <p>Go beyond the story into ideas, places, animals, history, language, and more.</p>
-    </div>
-  </div>
-</section>
-
-<section class="panel">
-  <h2>Episode notes and deeper trails</h2>
-
-  <p>
-    Each episode can connect back to a deeper trail on <strong>Unschool Pages</strong>,
-    where notes, links, sketches, references, and behind-the-scenes thoughts can keep growing.
-  </p><a class="button button-primary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
-
-</section>
-
-<h2 id="episodes">Episodes</h2>
-
-
-
-{% if podcast.length %}
-<p>
-  <strong>{{ podcast.length }} episodes available.</strong>
-</p>
-
-<div class="episode-list">
-  {% for episode in podcast %}
-  <article class="card episode-card">
-    <div class="episode-card_left">
-      <p class="eyebrow">Podcast Episode {{ episode.episodeNumber }}</p>
-
-      {% if episode.image %}
-      <img
-        class="episode-card__image"
-        src="{{ episode.image }}"
-        alt=""
-        loading="lazy">
-      {% endif %}
-    </div>
-    <div class="episode-card__content">
-
-      <h3>{{ episode.title }}</h3>
-
-      <p class="episode-meta">
-        {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
-        {% if episode.duration %} · {{ episode.duration }}{% endif %}
-      </p>
-
-      {% if episode.description %}
-      <p>{{ episode.description }}</p>
-      {% endif %}
-
-      <audio controls preload="none">
-        <source
-          src="{{ episode.audioUrl }}"
-          {% if episode.audioType %}type="{{ episode.audioType }}" {% endif %}>
-        Your browser does not support the audio element.
-      </audio>
-
-
-    </div>
-  </article>
-  {% endfor %}
-</div>
-{% else %}
-<p>No podcast episodes found yet.</p>
-{% endif %}
