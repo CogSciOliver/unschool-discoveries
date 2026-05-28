@@ -1,0 +1,19 @@
+---
+layout: false
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title or "Redirecting" }}</title>
+    <meta http-equiv="refresh" content="0; url={{ redirect_url }}">
+    <link rel="canonical" href="{{ redirect_url }}">
+    <meta name="robots" content="noindex, follow">
+  </head>
+  <body>
+    <p>
+      Redirecting to
+      <a href="{{ redirect_url }}">{{ redirect_label or redirect_url }}</a>.
+    </p>
+  </body>
+</html>

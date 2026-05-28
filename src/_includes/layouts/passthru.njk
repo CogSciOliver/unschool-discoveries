@@ -1,0 +1,39 @@
+---
+layout: false
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <link rel="canonical" href="{{ canonical_url or redirect_url }}">
+    <meta name="robots" content="{{ robots or 'noindex, follow' }}">
+
+    <meta property="og:title" content="{{ og_title or title }}">
+    <meta property="og:description" content="{{ og_description or description }}">
+    {% if og_image %}
+      <meta property="og:image" content="{{ og_image }}">
+    {% endif %}
+    <meta property="og:url" content="{{ canonical_url or redirect_url }}">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ og_title or title }}">
+    <meta name="twitter:description" content="{{ og_description or description }}">
+    {% if og_image %}
+      <meta name="twitter:image" content="{{ og_image }}">
+    {% endif %}
+
+    <meta http-equiv="refresh" content="0; url={{ redirect_url }}">
+  </head>
+
+  <body>
+    <p>
+      Continue to
+      <a href="{{ redirect_url }}">{{ redirect_label or title }}</a>.
+    </p>
+  </body>
+</html>
