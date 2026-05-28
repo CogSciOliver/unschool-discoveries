@@ -25,35 +25,8 @@
   border: 1px solid var(--surface-glass);
 }
 
-.page-body {
-  /* background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.86)),
-    rgba(255, 255, 255, 0.72); */
-}
-
 .page-body>*+* {
   margin-top: 1rem;
-}
-
-.page-body h2,
-.page-body h3 {
-  position: relative;
-  display: inline-block;
-  margin-top: 1.6rem;
-  margin-bottom: 0.55rem;
-  padding-right: 0.7rem;
-}
-
-.page-body h2::after,
-.page-body h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.35rem;
-  width: 100%;
-  height: 0.25rem;
-  border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, rgba(43, 124, 255, 0.6), rgba(136, 178, 255, 0.16), transparent);
 }
 
 .page-body p+ul,
@@ -84,51 +57,4 @@
 
 .panel img {
   box-shadow: var(--shadow-card);
-}
-
-/* PODCAST EPISODE CARDS */
-
-.episode-list {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.25rem;
-}
-
-.episode-card {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-}
-
-.episode-card__image {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  margin: 0;
-}
-
-.episode-card audio {
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.episode-meta {
-  margin-top: -0.25rem;
-  color: var(--color-ink-faint);
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.episode-link {
-  margin-bottom: 0;
-}
-
-@media (max-width: 720px) {
-  .episode-card {
-    grid-template-columns: 1fr;
-  }
-
-  .episode-card__image {
-    max-width: 12rem;
-  }
 }

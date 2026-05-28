@@ -1,0 +1,113 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero">
+    <h1>{{ title }}</h1>
+    {% if intro %}
+    <p class="lead">{{ intro }}</p>
+    {% endif %}
+
+    <div class="actions">
+        <a class="button button-frost" href="#episodes">Start Listening</a>
+        <a class="button button-primary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+    </div>
+</section>
+
+<section class="panel">
+
+    {% if podcast.length %}
+    <p class="eyebrow">
+        {{ podcast.length }} episodes available
+    </p>
+    {% else %}
+    <p>New podcast episodes coming soon.</p>
+    {% endif %}
+
+
+    <h2>Episodes That Focus on the Self-Directed Learning Journey</h2>
+
+    <p>
+        Conversations for families raising children outside a classroom.
+    </p>
+
+    <p>
+        Listen to episodes about unschooling, homeschooling, deschooling, child-led learning,
+        family life, creativity, nature, and the everyday moments where real learning happens.
+    </p>
+
+</section>
+
+<section class="panel">
+    <h2 id="episodes">Episodes</h2>
+
+    {% if podcast.length %}
+    <p>
+        <strong>{{ podcast.length }} episodes now available.</strong>
+    </p>
+
+    <div class="episode-list">
+        {% for episode in podcast %}
+        <article class="card">
+            <p class="eyebrow">Podcast Episode #{{ episode.episodeNumber }}</p>
+
+            <div class="episode-content">
+                <div class="episode-left">
+                    {% if episode.image %}
+                    <img
+                        class="episode-image"
+                        src="{{ episode.image }}"
+                        alt="{{ episode.title }}"
+                        loading="lazy">
+                    {% endif %}
+                </div>
+
+                <div class="episode-right">
+                    <h3>{{ episode.title }}</h3>
+
+                    <p class="episode-meta">
+                        {% if episode.dateLabel %}{{ episode.dateLabel }}{% endif %}
+                        {% if episode.duration %} · {{ episode.duration }}{% endif %}
+                    </p>
+
+                    {% if episode.description %}
+                    <p>{{ episode.description }}</p>
+                    {% endif %}
+
+                    <audio
+                        controls
+                        preload="none"
+                        aria-label="Listen to {{ episode.title }}"
+                        title="Listen to {{ episode.title }}">
+                        <source
+                            src="{{ episode.audioUrl }}"
+                            {% if episode.audioType %}type="{{ episode.audioType }}" {% endif %}>
+
+                        <a href="{{ episode.audioUrl }}">
+                            Listen to {{ episode.title }}
+                        </a>
+                    </audio>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>Podcast episodes are coming soon.</p>
+    {% endif %}
+
+
+</section>
+
+<section class="panel">
+    <h2>Episode notes and deeper trails</h2>
+
+    <p>
+        Each episode connects back to <strong>Unschool Pages</strong>, where notes, references,
+        resources, and behind-the-scenes thoughts keep growing.
+    </p>
+
+    <p>
+        <a class="button button-primary" href="{{ site.unschoolPagesUrl }}">Visit Unschool Pages</a>
+    </p>
+</section>

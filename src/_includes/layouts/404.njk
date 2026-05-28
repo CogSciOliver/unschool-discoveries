@@ -1,0 +1,109 @@
+---
+layout: layouts/base.njk
+---
+
+{% from "components/card-grid.njk" import cardGrid %}
+
+{% set trailItems = [
+{
+"eyebrow": "Start Here",
+"title": "Home",
+"text": "Return to the main doorway for Unschool Discoveries.",
+"href": "/",
+"button_label": "Go Home"
+},
+{
+"eyebrow": "Book",
+"title": "Unschool Discoveries",
+"text": "Find the book, story world, and reader paths.",
+"href": "/books/venturing-into-the-unknown/",
+"button_label": "View the Book"
+},
+{
+"eyebrow": "Gifts",
+"title": "Gift the Book",
+"text": "Find ways to gift Unschool Discoveries to a curious reader or family.",
+"href": "/gift/",
+"button_label": "View Gift Options"
+},
+{
+"eyebrow": "Media",
+"title": "Press Room",
+"text": "Find press releases, cover images, author bio, and interview resources.",
+"href": "/media/",
+"button_label": "Open Media"
+},
+{
+"eyebrow": "Listen",
+"title": "Podcast",
+"text": "Follow conversations about unschooling, curiosity, real-life learning, and the world behind Unschool Discoveries.",
+"href": "/podcast/",
+"button_label": "Listen In"
+},
+{
+"eyebrow": "Author",
+"title": "Author Bio",
+"text": "Read the official author bio and speaker information.",
+"href": "/media/author-bio/",
+"button_label": "Read Bio"
+},
+{
+"eyebrow": "Notebook",
+"title": "Unschool Pages",
+"text": "Visit the connected living notebook, rabbit holes, and behind-the-scenes publication.",
+"href": "https://unschoolpages.unschooldiscoveries.com/",
+"button_label": "Open Pages",
+"external": true
+},
+{
+"eyebrow": "Cover Images",
+"title": "Book Assets",
+"text": "Find cover images and brand assets for media or sharing.",
+"href": "/media/cover-images/",
+"button_label": "View Assets"
+}
+] %}
+
+<section class="hero">
+    <p class="eyebrow">Available Trails</p>
+
+    <h1>The Discovery Trail Starts Here.</h1>
+
+    <p class="lead">
+        {{ intro }}
+    </p>
+
+    <div class="actions">
+        <a class="button button-frost" href="/">Go to Home</a>
+        <a class="button" href="/sitemap.xml">View Sitemap</a>
+    </div>
+</section>
+
+<section class="panel">
+    <p class="eyebrow">Choose a path</p>
+    <h2>Where do you want to go?</h2>
+    <p>Choose a doorway below to keep exploring.</p>
+
+    {{ cardGrid(trailItems, "four") }}
+</section>
+
+<section class="panel">
+    <p class="eyebrow">Explore More</p>
+    <h2>Looking for the full sitemap?</h2>
+    <p>
+        Browse every available Unschool Discoveries page, including books, media resources,
+        author information, gift options, and reader paths.
+    </p>
+
+    <p>
+        <a class="button" href="/sitemap.xml" target="_blank" rel="noopener noreferrer">
+            View the Full Site Map
+        </a>
+    </p>
+</section>
+
+{% if content | trim %}
+<section class="panel">
+    {{ content | safe }}
+</section>
+{% endif %}

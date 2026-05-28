@@ -21,10 +21,6 @@
   margin-bottom: 0.55rem;
 }
 
-.card p {
-  margin: 0;
-}
-
 .panel h2 {
   margin-bottom: 0.8rem;
 }
@@ -129,4 +125,66 @@
 
 .feature-panel-actions {
   padding-top: 0.5rem;
+}
+
+
+/* PODCAST EPISODE CARDS */
+
+.episode-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.episode-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+
+.episode-content h3 {
+  margin: 0;
+}
+
+.episode-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0;
+}
+
+.episode-card audio {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-soft);
+}
+
+audio {
+  width: 100%;
+  height: 55px;
+  border-radius: 30px;
+  box-shadow: var(--shadow-audio);
+}
+
+.episode-meta {
+  color: var(--color-ink-faint);
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+
+.episode-link {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .episode-content {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-image {
+    max-width: 12rem;
+  }
 }

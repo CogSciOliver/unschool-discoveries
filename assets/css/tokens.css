@@ -55,6 +55,7 @@
   --shadow-soft: 0 0.5rem 1rem rgba(109, 92, 173, 0.10);
   --shadow-card: 0 0.5rem 2.8rem rgba(109, 92, 173, 0.14);
   --shadow-button: 0 0.9rem 1.8rem rgba(167, 124, 255, 0.28);
+  --shadow-audio: 0 0.3rem 0.8rem rgba(39, 4, 110, 0.28);
 
   --blur-glass: 18px;
 }
