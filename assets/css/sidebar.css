@@ -36,15 +36,15 @@
 }
 
 .logo {
-	display: block;
-	width: auto;
-	height: 75px;
-	background-image: url("https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-	flex: 0 0 auto;
+  display: block;
+  width: auto;
+  height: 75px;
+  background-image: url("https://mri.unschooldiscoveries.com/unschool-discoveries-B-logo.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  flex: 0 0 auto;
 }
 
 .site-nav {
@@ -66,8 +66,9 @@
 .site-nav a:hover {
   transform: translateX(0.25rem);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.66);
+  background: var(--gradient-brand);
   box-shadow: inset 0 0 0 1px rgba(167, 124, 255, 0.12);
+  color: var(--surface-page);
 }
 
 .site-nav a:hover::before {
