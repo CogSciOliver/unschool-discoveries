@@ -14,5 +14,21 @@
     "url": "/books/venturing-into-the-unknown/",
     "orderUrl": "https://www.amazon.com/gp/profile/amzn1.account.AFD6PF3RPWT6DNU6K2CBGP7YNNSQ/list/1OE4LANTXPOF2?ccs_id=978bbf5c-dc1a-4381-9fdc-5a814fd097e5&linkCode=ll2&tag=unschoolsuppl-20&linkId=06dc4999eb84c5e0584b735c60c83580&language=en_US&ref_=as_li_ss_tl",
     "featured": true
+  },
+  {
+    "eyebrow": "Book Two",
+    "slug": "book-two-coming-soon",
+    "title": "Unschool Discoveries: Book Two Coming Soon",
+    "subtitle": "A Story about Wonder, Exploration, and Learning Through Real Life",
+    "cover": "https://mri.unschooldiscoveries.com/unschool-discoveries-book-Cover-sq.png",
+    "hook": "A picture book for self-directed kids who want to teach themselves how to cook.",
+    "formats": [
+      "hardcover",
+      "paperback",
+      "ebook"
+    ],
+    "url": "/books/book-two-coming-soon/",
+    "orderUrl": "https://www.amazon.com/gp/profile/amzn1.account.AFD6PF3RPWT6DNU6K2CBGP7YNNSQ/list/1OE4LANTXPOF2?ccs_id=978bbf5c-dc1a-4381-9fdc-5a814fd097e5&linkCode=ll2&tag=unschoolsuppl-20&linkId=06dc4999eb84c5e0584b735c60c83580&language=en_US&ref_=as_li_ss_tl",
+    "featured": true
   }
 ]
